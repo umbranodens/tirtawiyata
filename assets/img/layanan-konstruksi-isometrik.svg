@@ -2,21 +2,21 @@
 <title id="title">Konstruksi dan pemasokan mesin pabrik air</title>
 <desc id="description">Struktur pabrik sedang dibangun, crane mengangkat peralatan, tangki dan mesin mulai dipasang, truk mengirim mesin, dengan material konstruksi dan teknisi di lapangan.</desc>
 <style>
-.site-plan{animation:plan 6s linear infinite}.water-flow{animation:flow 1.2s linear infinite}
-.sample-flow{animation:flow 1.4s linear infinite}.survey-ray{animation:survey 6s linear infinite}
-.survey-head{transform-origin:0 -42px;animation:survey-head 6s ease-in-out infinite}
-.survey-target{animation:target 6s ease-out infinite}
-.permit-check,.plan-trace{stroke-dasharray:1;animation:approve 6s ease-in-out infinite}
-.drafting-pencil{animation:drawing 4s ease-in-out infinite}.site-inspector{animation:inspect 10s ease-in-out infinite}
-.crane-trolley{animation:trolley 10s ease-in-out infinite}.crane-load{animation:hoist 4s ease-in-out infinite}
-.crane-rope{animation:rope 4s ease-in-out infinite}.delivery-forklift{animation:deliver 9s ease-in-out infinite}
-.supply-truck{animation:truck 12s ease-in-out infinite}.installer{animation:inspect 7s ease-in-out infinite}
-.welding-spark{animation:welding 2.8s ease-in-out infinite}
-.main-line{animation:bottles 9s linear infinite}.filling-water{animation:fill 1.5s ease-in-out infinite}
-.fan{animation:fan 2s linear infinite}.production-press{animation:press 2.2s ease-in-out infinite}
-.filling-head{animation:press 1.5s ease-in-out infinite}.packing-carton{animation:pack 4s linear infinite}
-.sample-pipette{animation:pipette 3s ease-in-out infinite}.sample-drop{animation:drop 3s ease-in infinite}
-.dispatch-truck{animation:truck 14s ease-in-out infinite}
+.site-plan{animation:plan 5.1s linear infinite}.water-flow{animation:flow 1.02s linear infinite}
+.sample-flow{animation:flow 1.19s linear infinite}.survey-ray{animation:survey 5.1s linear infinite}
+.survey-head{transform-origin:0 -42px;animation:survey-head 5.1s ease-in-out infinite}
+.survey-target{animation:target 5.1s ease-out infinite}
+.permit-check,.plan-trace{stroke-dasharray:1;animation:approve 5.1s ease-in-out infinite}
+.drafting-pencil{animation:drawing 3.4s ease-in-out infinite}.site-inspector{animation:inspect 8.5s ease-in-out infinite}
+.crane-trolley{animation:trolley 8.5s ease-in-out infinite}.crane-load{animation:hoist 3.4s ease-in-out infinite}
+.crane-rope{animation:rope 3.4s ease-in-out infinite}.delivery-forklift{animation:deliver 7.65s ease-in-out infinite}
+.supply-truck{animation:truck 10.2s ease-in-out infinite}.installer{animation:inspect 5.95s ease-in-out infinite}
+.welding-spark{animation:welding 2.38s ease-in-out infinite}
+.main-line{animation:bottles 7.65s linear infinite}.filling-water{animation:fill 1.275s ease-in-out infinite}
+.fan{animation:fan 1.7s linear infinite}.production-press{animation:press 1.87s ease-in-out infinite}
+.filling-head{animation:press 1.275s ease-in-out infinite}.packing-carton{animation:pack 3.4s linear infinite}
+.sample-pipette{animation:pipette 2.55s ease-in-out infinite}.sample-drop{animation:drop 2.55s ease-in infinite}
+.dispatch-truck{animation:truck 11.9s ease-in-out infinite}
 @keyframes plan{to{stroke-dashoffset:-26}}@keyframes flow{to{stroke-dashoffset:-36}}
 @keyframes approve{0%,12%{stroke-dashoffset:1}35%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:1}}
 @keyframes survey{0%,28%{opacity:.9;stroke-dashoffset:0}33%,95%{opacity:0}100%{opacity:.9;stroke-dashoffset:-36}}

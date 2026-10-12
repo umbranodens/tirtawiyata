@@ -240,7 +240,10 @@ const stages = [
   ['layanan-operasional-isometrik','Pabrik air siap beroperasi','Pabrik selesai dengan tangki dan sistem pemurnian, mesin pengisian, conveyor botol bergerak, pemeriksaan sampel air, operator, palet kemasan, forklift, serta truk distribusi.',ready()]
 ];
 for(const [name,title,description,scene] of stages) {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="45 0 825 660" role="img" aria-labelledby="title description"><title id="title">${title}</title><desc id="description">${description}</desc>${css}${defs}${scene}</svg>`.replace(/></g,'>\n<');
+  const durationScale = name === 'layanan-operasional-isometrik' ? 1 : 0.85;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="45 0 825 660" role="img" aria-labelledby="title description"><title id="title">${title}</title><desc id="description">${description}</desc>${css}${defs}${scene}</svg>`
+    .replace(/(animation(?:-delay)?:[^;}]*?)(-?\d+(?:\.\d+)?)s/g, (original, declaration, seconds) => durationScale === 1 ? original : declaration + Number((Number(seconds) * durationScale).toFixed(3)) + 's')
+    .replace(/></g,'>\n<');
   fs.writeFileSync(path.join(__dirname,'../assets/img/'+name+'.svg'),svg);
   console.log(name+': '+Buffer.byteLength(svg)+' bytes');
 }
