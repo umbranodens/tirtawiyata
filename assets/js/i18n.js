@@ -2,6 +2,7 @@
   'use strict';
 
   var translations = new Map([
+    ['Solusi Pabrik & Mesin Siap Operasi', 'Engineering & Machinery Turnkey Solution'],
     ['Lewati ke konten utama', 'Skip to main content'],
     ['Beranda', 'Home'], ['Tentang Kami', 'About Us'], ['Layanan', 'Services'], ['Produk', 'Products'], ['Kontak', 'Contact'],
     ['Hubungi Kami', 'Contact Us'], ['Layanan Rekayasa', 'Engineering Services'], ['Katalog Mesin', 'Machinery Catalog'], ['Portfolio Pabrik', 'Plant Portfolio'],

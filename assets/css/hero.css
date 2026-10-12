@@ -1,0 +1,40 @@
+.hero .hero-stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  min-height: 600px;
+  margin-bottom: 32px;
+  padding: 36px 20px;
+  border-radius: var(--r-xl);
+  background: var(--navy-ink);
+}
+.hero .hero-media { position: absolute; inset: 0; z-index: -2; height: 100%; margin: 0; border-radius: 0; }
+.hero .hero-media img { object-position: 65% center; }
+.hero .hero-media figcaption { display: none; }
+.hero .hero-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgba(0, 16, 38, .86);
+  pointer-events: none;
+}
+.hero .hero-head { min-width: 0; width: 100%; max-width: 660px; align-items: flex-start; text-align: left; margin: 0; }
+.hero .h-display { color: #fff; }
+.hero .hero-head .lead { color: #ecf1ff; max-width: 560px; }
+.hero .hero-head .chip { max-width: 100%; line-height: 18px; color: var(--cyan-light); background: rgba(0, 16, 38, .75); border: 1px solid #436078; }
+.hero .chip-dot { background: var(--cyan-light); }
+.hero .hero-ctas { margin-bottom: 0; }
+.hero .hero-ctas .btn-soft { background: #fff; color: var(--navy); }
+.hero .hero-ctas .btn-soft:hover { background: var(--bg-mid); }
+.hero .hero-head :focus-visible { outline-color: var(--cyan-light); }
+@media (min-width: 640px) {
+  .hero .hero-stage { min-height: 620px; padding: 48px 36px; }
+  .hero .hero-ctas { justify-content: flex-start; flex-wrap: wrap; }
+}
+@media (min-width: 1024px) {
+  .hero .hero-stage { min-height: 660px; padding: 64px 56px; }
+  .hero .hero-stage::after { background: linear-gradient(90deg, rgba(0, 16, 38, .95) 0%, rgba(0, 16, 38, .88) 62%, rgba(0, 16, 38, .35) 100%); }
+}
