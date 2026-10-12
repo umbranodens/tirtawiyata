@@ -219,9 +219,9 @@
     @media (min-width: 1024px) { .brand img { height: 44px; } }
 
     .nav { display: none; }
-    .nav ul { display: flex; align-items: center; gap: 20px; }
+    .nav ul { display: grid; grid-template-columns: 62px 90px 72px 78px 104px 68px 64px; align-items: center; gap: 20px; }
     .nav a {
-      position: relative; display: block; padding: 8px 0;
+      position: relative; display: block; padding: 8px 0; text-align: center; white-space: nowrap;
       font: 500 14px/20px var(--font-body); color: var(--ink-2);
       transition: color .2s ease;
     }
@@ -233,12 +233,25 @@
     .nav a:hover { color: var(--navy-ink); }
     .nav a.is-active { color: var(--navy-ink); font-weight: 600; }
     .nav a.is-active::after { transform: scaleX(1); }
-    @media (min-width: 1024px) { .nav { display: block; } }
-    @media (min-width: 1280px) { .nav ul { gap: 28px; } }
+    @media (min-width: 1200px) { .nav { display: block; } }
+    @media (min-width: 1280px) { .nav ul { gap: 20px; } }
 
-    .header-actions { display: flex; align-items: center; gap: 8px; }
-    .lbl-long { display: none; }
-    @media (min-width: 1280px) { .lbl-long { display: inline; } .lbl-short { display: none; } }
+    .header-actions { display: flex; flex-shrink: 0; align-items: center; gap: 8px; margin-left: auto; }
+    .header-contact { width: 156px; flex-shrink: 0; }
+    .language-switch { display: flex; flex-shrink: 0; border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; }
+    .language-switch button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; width: 58px; min-height: 44px; padding: 8px; border: 0; background: var(--bg); font: 600 13px/20px var(--font-display); color: var(--ink-2); }
+    .language-flag { width: 20px; height: 14px; flex-shrink: 0; border-radius: 2px; box-shadow: 0 0 0 1px rgba(0, 16, 38, .15); }
+    .language-switch button[aria-pressed="true"] { background: var(--navy); color: #fff; }
+    .language-switch button:focus-visible { outline-offset: -3px; }
+    @media (max-width: 639px) { .header-contact { display: none; } }
+    @media (max-width: 399px) {
+      .header-actions .btn { min-height: 44px; padding-inline: 10px; }
+      .header-actions .btn .ico-wa { display: none; }
+    }
+    @media (min-width: 1024px) and (max-width: 1279px) {
+      .nav ul { gap: 12px; }
+      .header-actions .btn { padding-inline: 10px; }
+    }
 
     .nav-toggle {
       display: inline-grid; place-items: center;
@@ -247,7 +260,7 @@
       background: var(--bg-low); color: var(--navy);
     }
     .nav-toggle .ms { font-size: 24px; }
-    @media (min-width: 1024px) { .nav-toggle { display: none; } }
+    @media (min-width: 1200px) { .nav-toggle { display: none; } }
 
     .mobile-nav {
       position: absolute; left: 0; right: 0; top: 100%;
@@ -267,7 +280,7 @@
     .mobile-nav li a .ms { color: var(--muted); }
     .mobile-nav li a.is-active { color: var(--cyan); }
     .mobile-nav .btn { margin: 16px 0 20px; }
-    @media (min-width: 1024px) { .mobile-nav { display: none !important; } }
+    @media (min-width: 1200px) { .mobile-nav { display: none !important; } }
 
     /* ==========================================================
        Hero
@@ -343,6 +356,11 @@
        Tentang
        ========================================================== */
     .about-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; align-items: center; }
+    .about-card {
+      padding: 24px 20px; background: #f7fbfd;
+      border: 1px solid #d6e3ed; border-radius: 24px;
+      box-shadow: 0 12px 36px -24px rgba(11, 37, 69, .22);
+    }
     .about-media {
       position: relative; order: 2; display: flex; align-items: center; justify-content: center;
       align-self: stretch; min-width: 0; margin: 0;
@@ -352,9 +370,17 @@
     .about-copy .h-section { margin-bottom: 16px; }
     .about-copy .lead { color: var(--ink); margin-bottom: 16px; }
     .about-copy > .about-note { font-size: 15px; line-height: 24px; color: var(--ink-2); margin-bottom: 24px; }
+    .about-cert-link { width: 100%; margin-bottom: 24px; }
+    @media (min-width: 640px) { .about-cert-link { width: auto; } }
+    .about-card .vm-card {
+      padding: 24px 0 0; background: transparent;
+      border: 0; border-top: 1px solid #d6e3ed; border-radius: 0;
+    }
     @media (min-width: 640px) { .about-media { max-width: 720px; width: 100%; margin-inline: auto; } }
+    @media (min-width: 768px) { .about-card { padding: 40px 32px; } }
     @media (min-width: 1024px) {
-      .about-grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 32px; }
+      .about-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 56px; }
+      .about-card { padding: 48px 40px; }
       .about-media { order: 0; max-width: none; }
     }
 
@@ -383,51 +409,26 @@
     .subsection + .subsection { margin-top: 56px; padding-top: 56px; border-top: 1px solid var(--line); }
     @media (min-width: 1024px) { .subsection + .subsection { margin-top: 72px; padding-top: 72px; } }
 
-    /* Roadmap: vertical spine on mobile, chained track on larger screens */
-    .roadmap { display: grid; margin-bottom: 24px; counter-reset: step; }
-    .roadmap li { position: relative; display: grid; grid-template-columns: 40px 1fr; column-gap: 16px; padding-bottom: 16px; }
-    .roadmap li:last-child { padding-bottom: 0; }
-    .roadmap li::before {
-      content: ""; position: absolute; z-index: 0;
-      left: 19px; top: 40px; bottom: 0; width: 2px;
-      background: var(--line);
+    .build-roadmap { display: grid; gap: 24px; margin-bottom: 32px; }
+    .build-stage {
+      min-width: 0; padding: 20px; background: #f7fbfd;
+      border: 1px solid #d6e3ed; border-radius: 16px;
     }
-    .roadmap li:last-child::before { display: none; }
-    .step-marker {
-      position: relative; z-index: 1;
-      display: grid; place-items: center;
-      width: 40px; height: 40px; border-radius: 50%;
-      background: var(--navy); color: #fff;
-      font: 700 15px/1 var(--font-display); font-feature-settings: "tnum" 1;
-      box-shadow: 0 0 0 4px var(--bg), 0 0 0 6px rgba(2, 128, 144, .28);
-    }
-    .step-card {
-      display: flex; flex-direction: column; gap: 6px;
-      padding: 16px; border-radius: var(--r-lg);
-      background: var(--bg-low);
-      transition: background-color .2s ease;
-    }
-    .step-card:hover { background: var(--bg-mid); }
-    .step-card .body-sm { flex: 1; }
-    .step-phase { margin-top: 8px; }
-    .step--final .step-marker { background: var(--cyan); }
-    .step--final .step-card { background: var(--cyan); }
-    .step--final .step-card:hover { background: var(--cyan); }
-    .step--final .h-title { color: #fff; }
-    .step--final .body-sm { color: var(--cyan-tint); }
-    .step--final .step-phase { color: var(--cyan-light); }
-
+    .build-scene { width: 100%; max-width: 480px; margin: 0 auto 20px; }
+    .build-scene img { display: block; width: 100%; height: auto; }
+    .build-stage-heading { display: flex; align-items: baseline; gap: 12px; margin-bottom: 12px; }
+    .build-stage-number { color: var(--cyan-2); font: 700 13px/20px var(--font-display); }
+    .build-stage-heading .h-card { font-size: 20px; line-height: 28px; }
+    .build-description { display: grid; gap: 10px; padding-left: 18px; list-style: disc; color: var(--ink-2); }
+    .build-description > li::marker { color: var(--cyan-2); }
     @media (min-width: 768px) {
-      .roadmap { grid-template-columns: repeat(3, 1fr); gap: 28px 16px; }
-      .roadmap li { display: flex; flex-direction: column; gap: 14px; padding-bottom: 0; }
-      .roadmap li::before { left: 40px; right: -16px; top: 19px; bottom: auto; width: auto; height: 2px; }
-      .roadmap li:nth-child(3n)::before { display: none; }
-      .step-card { flex: 1; }
+      .build-roadmap { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+      .build-stage { padding: 16px; }
+      .build-stage-heading { flex-direction: column; gap: 4px; }
     }
     @media (min-width: 1200px) {
-      .roadmap { grid-template-columns: repeat(6, 1fr); }
-      .roadmap li:nth-child(3n)::before { display: block; }
-      .roadmap li:last-child::before { display: none; }
+      .build-stage { padding: 24px; }
+      .build-stage-heading { flex-direction: row; gap: 12px; }
     }
 
     .callout {
@@ -465,6 +466,16 @@
     }
     .equip-cta .ico-wa { color: var(--wa); }
     .equip-cta:hover { border-color: var(--wa); }
+    .equip-card--contact {
+      background: var(--cyan-wash); border-color: #c3e4e8;
+    }
+    .equip-card--contact .equip-media img { object-position: center 42%; }
+    .equip-card--contact .eyebrow { color: var(--cyan); }
+    .equip-card--contact .equip-cta {
+      background: var(--navy); border-color: var(--navy); color: var(--bg);
+      transition: background-color .2s ease, border-color .2s ease;
+    }
+    .equip-card--contact .equip-cta:hover { background: var(--navy-2); border-color: var(--navy-2); }
 
     /* ==========================================================
        Produk
@@ -609,6 +620,28 @@
       padding: 40px 16px; border-radius: var(--r-lg); background: var(--bg);
     }
 
+    .cert-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+    .cert-card {
+      display: flex; flex-direction: column;
+      min-width: 0; padding: 24px 20px; border: 1px solid var(--line);
+      border-top: 3px solid var(--cyan); border-radius: var(--r-lg); background: var(--bg);
+    }
+    .cert-standard { display: flex; align-items: baseline; gap: 8px; margin-bottom: 24px; color: var(--navy); }
+    .cert-standard span { font: 700 16px/24px var(--font-display); }
+    .cert-standard strong { font: 800 36px/44px var(--font-display); letter-spacing: -.02em; }
+    .cert-card .h-card { margin-bottom: 8px; }
+    .cert-card .body-sm { flex: 1; margin-bottom: 20px; }
+    .cert-link { width: 100%; margin-top: 16px; }
+    .cert-link:disabled {
+      cursor: not-allowed; background: var(--bg-low); color: var(--ink-2);
+      border-color: var(--line); box-shadow: none; transform: none;
+    }
+    .cert-scope { display: block; padding-top: 14px; border-top: 1px solid var(--line); font-size: 13px; line-height: 20px; color: var(--cyan); }
+    .cert-note { display: flex; align-items: flex-start; gap: 10px; margin-top: 20px; color: var(--ink-2); }
+    .cert-note .ms { flex-shrink: 0; font-size: 20px; color: var(--cyan); }
+    @media (min-width: 640px) { .cert-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+    @media (min-width: 1024px) { .cert-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
     /* ==========================================================
        Kontak
        ========================================================== */
@@ -669,7 +702,7 @@
        Floating WhatsApp
        ========================================================== */
     .fab {
-      position: fixed; right: 16px; bottom: 16px; z-index: 90;
+      position: fixed; right: max(16px, env(safe-area-inset-right)); bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 90;
       display: inline-flex; align-items: center; justify-content: center; gap: 8px;
       width: 56px; height: 56px; border-radius: 9999px;
       background: var(--wa); color: #fff;
@@ -678,18 +711,18 @@
     }
     .fab:hover { background: var(--wa-hover); transform: translateY(-2px); }
     .fab .ico-wa { width: 26px; height: 26px; }
-    .fab-label { display: none; font: 600 15px/20px var(--font-display); }
-    .fab-ping { position: absolute; top: 3px; right: 3px; display: flex; width: 12px; height: 12px; }
-    .fab-ping::before, .fab-ping::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: #fff; }
-    .fab-ping::after { box-shadow: 0 0 0 2px var(--wa); }
-    .fab-ping::before { animation: ping 1.6s cubic-bezier(0, 0, .2, 1) infinite; opacity: .75; }
-    @keyframes ping { 75%, 100% { transform: scale(2.2); opacity: 0; } }
+    .back-to-top {
+      position: fixed; right: max(20px, env(safe-area-inset-right)); bottom: calc(84px + env(safe-area-inset-bottom)); z-index: 90;
+      display: grid; place-items: center; width: 48px; height: 48px;
+      border: 1px solid var(--line); border-radius: var(--r-md); background: var(--bg); color: var(--navy);
+      box-shadow: var(--shadow-hover); transition: background-color .2s ease, border-color .2s ease;
+    }
+    .back-to-top:hover { background: var(--bg-low); border-color: var(--cyan); }
+    .back-to-top svg { width: 22px; height: 22px; }
     @media (min-width: 640px) {
-      .fab { right: 24px; bottom: 24px; width: auto; height: 48px; padding: 0 20px 0 16px; }
+      .fab { right: max(24px, env(safe-area-inset-right)); bottom: calc(24px + env(safe-area-inset-bottom)); width: 48px; height: 48px; }
+      .back-to-top { right: max(24px, env(safe-area-inset-right)); }
       .fab .ico-wa { width: 20px; height: 20px; }
-      .fab-label { display: inline; }
-      .fab-ping { position: relative; top: auto; right: auto; width: 10px; height: 10px; }
-      .fab-ping::after { box-shadow: none; }
     }
 
     /* ==========================================================
@@ -755,7 +788,7 @@
     }
   </style>
 </head>
-<body>
+<body id="top">
   <!-- Icon sprite: official WhatsApp glyph -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <symbol id="i-wa" viewBox="0 0 24 24">
@@ -785,10 +818,13 @@
       </nav>
 
       <div class="header-actions">
-        <a class="btn btn-wa btn-sm" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perencanaan%20pabrik%20AMDK%20dan%20katalog%20mesin." target="_blank" rel="noopener noreferrer">
+        <div class="language-switch" role="group" aria-label="Pilihan bahasa">
+          <button type="button" data-language="id" lang="id" aria-label="Bahasa Indonesia" aria-pressed="true"><img class="language-flag" src="assets/flags/id.svg" width="20" height="14" alt="" aria-hidden="true">ID</button>
+          <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="false"><img class="language-flag" src="assets/flags/gb.svg" width="20" height="14" alt="" aria-hidden="true">EN</button>
+        </div>
+        <a class="btn btn-wa btn-sm header-contact" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perencanaan%20pabrik%20AMDK%20dan%20katalog%20mesin." target="_blank" rel="noopener noreferrer">
           <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
-          <span class="lbl-long">Hubungi Admin WhatsApp</span>
-          <span class="lbl-short">WhatsApp</span>
+          <span>Hubungi Kami</span>
         </a>
         <button class="nav-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Buka menu">
           <span class="ms" aria-hidden="true">menu</span>
@@ -809,7 +845,7 @@
         </ul>
         <a class="btn btn-wa btn-lg btn-block" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20tentang%20proyek%20pabrik%20AMDK." target="_blank" rel="noopener noreferrer">
           <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
-          Hubungi Admin via WhatsApp
+          Hubungi Kami
         </a>
       </div>
     </nav>
@@ -826,18 +862,13 @@
           <div class="hero-ctas">
             <a class="btn btn-wa btn-lg" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20tentang%20proyek%20pabrik%20AMDK." target="_blank" rel="noopener noreferrer">
               <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
-              Hubungi Admin via WhatsApp
+              Hubungi Kami
             </a>
             <a class="btn btn-soft btn-lg" href="#layanan">
               Jelajahi Layanan
               <span class="ms" aria-hidden="true">arrow_forward</span>
             </a>
           </div>
-          <dl class="hero-specs">
-            <div><dt class="spec-k">Standar Material</dt><dd class="spec-v" style="margin:0">SUS304 / SUS316L</dd></div>
-            <div><dt class="spec-k">Kapasitas Produksi</dt><dd class="spec-v" style="margin:0">300 – 6.000 BPH</dd></div>
-            <div><dt class="spec-k">Dukungan Teknis</dt><dd class="spec-v" style="margin:0">SLA Turnkey Full</dd></div>
-          </dl>
         </div>
 
         <figure class="hero-media">
@@ -877,7 +908,8 @@
 
     <!-- ======================= TENTANG ======================= -->
     <section class="section section--tint" id="tentang" aria-labelledby="tentang-title">
-      <div class="container about-grid">
+      <div class="container">
+        <div class="about-card about-grid">
         <figure class="about-media">
           <img class="factory-scene" src="assets/img/pabrik-air-isometrik.svg"
                width="825" height="660" loading="lazy" decoding="async"
@@ -889,6 +921,7 @@
           <h2 class="h-section" id="tentang-title">Mitra Strategis Rekayasa Industri Air Minum dalam Kemasan (AMDK)</h2>
           <p class="lead">Tirta Wiyata Investama hadir sebagai mitra strategis bagi pemilik lahan, investor perintis, maupun korporasi yang ingin mendirikan fasilitas produksi air minum dalam kemasan. Kami memfasilitasi setiap tahap dari rekayasa kelayakan (feasibility), penyusunan tata letak ruang higienis, penyediaan permesinan, hingga pendampingan uji alir komersial.</p>
           <p class="about-note">Dengan pengalaman instalasi di berbagai wilayah Indonesia, pendekatan kami bertumpu pada keandalan mekanikal jangka panjang, efisiensi konsumsi daya, serta kemudahan transfer teknologi kepada tim operasional Anda.</p>
+          <a class="btn btn-outline about-cert-link" href="#sertifikasi"><span class="ms" aria-hidden="true">verified</span>Lihat Sertifikasi</a>
 
           <div class="vm-card">
             <span class="spec-k">Visi &amp; Misi</span>
@@ -901,6 +934,7 @@
               <p class="body-sm">Memberikan solusi rancang bangun pabrik yang komprehensif, menyediakan mesin cetak berdaya tahan tinggi, dan memastikan transfer teknologi yang tuntas kepada operator lokal.</p>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
@@ -916,54 +950,51 @@
             <p class="lead">Program pendampingan terstruktur khusus untuk pemilik lahan dan calon investor pabrik air minum yang membutuhkan panduan menyeluruh dari nol hingga pabrik beroperasi penuh.</p>
           </header>
 
-          <ol class="roadmap" aria-label="Enam tahap pembangunan pabrik">
-            <li>
-              <span class="step-marker" aria-hidden="true">01</span>
-              <div class="step-card">
-                <h3 class="h-title"><span class="sr-only">Tahap 1: </span>Survei &amp; Konsultasi Awal</h3>
-                <p class="body-sm">Inspeksi kelayakan sumber air baku, akses logistik, dan kesiapan infrastruktur lahan.</p>
-                <span class="eyebrow step-phase">Evaluasi</span>
+          <ol class="build-roadmap" aria-label="Tiga fase pembangunan pabrik">
+            <li class="build-stage">
+              <figure class="build-scene">
+                <img src="assets/img/layanan-perencanaan-isometrik.svg" width="825" height="660" loading="lazy" decoding="async"
+                     alt="Survei lahan dan sumber air, patok denah pabrik, serta persiapan gambar teknis dan dokumen perizinan">
+              </figure>
+              <div class="build-stage-heading">
+                <span class="build-stage-number" aria-hidden="true">01</span>
+                <h3 class="h-card">Perencanaan &amp; Perizinan</h3>
               </div>
+              <ul class="body-sm build-description">
+                <li>Konsultasi dan survei lahan, sumber air, akses logistik, serta infrastruktur.</li>
+                <li>Studi kelayakan dan tata letak ruang produksi higienis, termasuk jalur pipa.</li>
+                <li>Pendampingan standar sanitasi dan kebutuhan perizinan sebelum pembangunan.</li>
+              </ul>
             </li>
-            <li>
-              <span class="step-marker" aria-hidden="true">02</span>
-              <div class="step-card">
-                <h3 class="h-title"><span class="sr-only">Tahap 2: </span>Studi &amp; Layout Pabrik</h3>
-                <p class="body-sm">Penyusunan gambar tata letak ruang bersih (clean room), zoning higienis, dan jalur pipa.</p>
-                <span class="eyebrow step-phase">Arsitektur</span>
+            <li class="build-stage">
+              <figure class="build-scene">
+                <img src="assets/img/layanan-konstruksi-isometrik.svg" width="825" height="660" loading="lazy" decoding="async"
+                     alt="Struktur pabrik sedang dibangun, crane mengangkat peralatan, truk memasok mesin, serta teknisi memasang tangki dan mesin produksi">
+              </figure>
+              <div class="build-stage-heading">
+                <span class="build-stage-number" aria-hidden="true">02</span>
+                <h3 class="h-card">Konstruksi &amp; Instalasi</h3>
               </div>
+              <ul class="body-sm build-description">
+                <li>Pemilihan dan pengadaan mesin cetak kemasan, pengolahan air, serta lini pengisian sesuai target produksi.</li>
+                <li>Pemasangan mesin dan perpipaan, uji coba, serta kalibrasi sensor.</li>
+                <li>Pelatihan operator agar tim Anda siap menjalankan produksi.</li>
+              </ul>
             </li>
-            <li>
-              <span class="step-marker" aria-hidden="true">03</span>
-              <div class="step-card">
-                <h3 class="h-title"><span class="sr-only">Tahap 3: </span>Pendampingan Perizinan</h3>
-                <p class="body-sm">Arahan teknis kepatuhan standar sanitasi perizinan industri air minum dalam kemasan.</p>
-                <span class="eyebrow step-phase">Kepatuhan</span>
+            <li class="build-stage">
+              <figure class="build-scene">
+                <img src="assets/img/layanan-operasional-isometrik.svg" width="825" height="660" loading="lazy" decoding="async"
+                     alt="Pabrik selesai dengan pemurnian air, mesin cetak dan pengisian botol, conveyor berjalan, pengujian sampel, operator, serta pengiriman produk">
+              </figure>
+              <div class="build-stage-heading">
+                <span class="build-stage-number" aria-hidden="true">03</span>
+                <h3 class="h-card">Siap Beroperasi</h3>
               </div>
-            </li>
-            <li>
-              <span class="step-marker" aria-hidden="true">04</span>
-              <div class="step-card">
-                <h3 class="h-title"><span class="sr-only">Tahap 4: </span>Pengadaan Mesin</h3>
-                <p class="body-sm">Penetapan spesifikasi mesin cetak, water treatment, dan lini pengisian sesuai target BPH.</p>
-                <span class="eyebrow step-phase">Fabrikasi</span>
-              </div>
-            </li>
-            <li>
-              <span class="step-marker" aria-hidden="true">05</span>
-              <div class="step-card">
-                <h3 class="h-title"><span class="sr-only">Tahap 5: </span>Instalasi &amp; Uji Coba</h3>
-                <p class="body-sm">Pemasangan perpipaan, commissioning mesin, kalibrasi sensor, serta pelatihan operator.</p>
-                <span class="eyebrow step-phase">Eksekusi</span>
-              </div>
-            </li>
-            <li class="step--final">
-              <span class="step-marker" aria-hidden="true">06</span>
-              <div class="step-card">
-                <h3 class="h-title"><span class="sr-only">Tahap 6: </span>Pabrik Beroperasi</h3>
-                <p class="body-sm">Lini komersial berjalan lancar dengan jaminan pendampingan teknis purnajual berkala.</p>
-                <span class="eyebrow step-phase">Produksi</span>
-              </div>
+              <ul class="body-sm build-description">
+                <li>Pabrik siap memasuki produksi komersial setelah instalasi dan uji coba selesai.</li>
+                <li>Tim operasional siap menjalankan mesin sesuai pelatihan.</li>
+                <li>Pendampingan teknis purnajual berkala untuk menjaga keandalan lini produksi.</li>
+              </ul>
             </li>
           </ol>
 
@@ -1023,12 +1054,12 @@
               <p class="body-sm">TDS meter presisi, turbidimeter terkalibrasi, inkubator mikroba, pH meter industri, serta instrumen uji rutin higienitas laboratorium pabrik.</p>
               <a class="equip-cta" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20tanya%20ketersediaan%20Peralatan%20Laboratorium%20QC." target="_blank" rel="noopener noreferrer">Tanya Ketersediaan <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
             </article>
-            <article class="equip-card">
-              <div class="equip-media"><img src="assets/img/perlengkapan-kemasan-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Tumpukan tutup galon biru, gulungan label shrink, dan preform PET di gudang pabrik"></div>
-              <span class="eyebrow">Tutup · Label · Preform</span>
-              <h3 class="h-card">Kemasan &amp; Perlengkapan</h3>
-              <p class="body-sm">Tutup galon higienis anti-spill, seal shrink label botol &amp; leher galon, preform botol PET murni, serta kardus outer packaging.</p>
-              <a class="equip-cta" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20tanya%20ketersediaan%20Kemasan%20dan%20Tutup%20Galon." target="_blank" rel="noopener noreferrer">Tanya Ketersediaan <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
+            <article class="equip-card equip-card--contact">
+              <div class="equip-media"><img src="assets/img/tentang-engineer-plc-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Teknisi memeriksa panel kontrol mesin di pabrik"></div>
+              <span class="eyebrow">Kebutuhan Mesin &amp; Perlengkapan</span>
+              <h3 class="h-card">Butuh Mesin Lain?</h3>
+              <p class="body-sm">Mesin yang Anda cari belum tercantum? Hubungi kami untuk mendiskusikan jenis mesin, kapasitas, dan kebutuhan pabrik Anda.</p>
+              <a class="equip-cta" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20menanyakan%20mesin%20atau%20perlengkapan%20lain%20untuk%20kebutuhan%20pabrik%20saya." target="_blank" rel="noopener noreferrer">Hubungi Kami <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
             </article>
           </div>
         </div>
@@ -1187,7 +1218,7 @@
 
           <a class="btn btn-wa btn-lg" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20mengajukan%20Custom%20Order%20cetakan%20botol%2Fgalon." target="_blank" rel="noopener noreferrer">
             <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
-            Ajukan Custom via WhatsApp
+            Hubungi Kami
           </a>
         </div>
 
@@ -1305,6 +1336,40 @@
       </div>
     </section>
 
+    <section class="section" id="sertifikasi" aria-labelledby="sertifikasi-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Mutu, Keamanan &amp; Keselamatan</span>
+          <h2 class="h-section" id="sertifikasi-title">Sertifikasi &amp; Standar</h2>
+          <p class="lead">Sistem manajemen yang relevan untuk rekayasa industri dan operasional pabrik air minum.</p>
+        </header>
+        <div class="cert-grid">
+          <article class="cert-card">
+            <div class="cert-standard" aria-label="ISO 9001"><span>ISO</span><strong>9001</strong></div>
+            <h3 class="h-card">Manajemen Mutu</h3>
+            <p class="body-sm">Pengelolaan proses, konsistensi mutu, serta perbaikan berkelanjutan dalam penyediaan produk dan layanan.</p>
+            <span class="cert-scope">Sistem manajemen organisasi</span>
+            <button class="btn btn-outline cert-link" type="button" disabled title="Link sertifikat belum tersedia" aria-label="Lihat Sertifikat ISO 9001, link belum tersedia"><span class="ms" aria-hidden="true">visibility</span>Lihat Sertifikat</button>
+          </article>
+          <article class="cert-card">
+            <div class="cert-standard" aria-label="ISO 22000"><span>ISO</span><strong>22000</strong></div>
+            <h3 class="h-card">Keamanan Pangan</h3>
+            <p class="body-sm">Identifikasi dan pengendalian bahaya keamanan pangan di sepanjang rantai produksi, termasuk industri air minum.</p>
+            <span class="cert-scope">Sistem manajemen keamanan pangan</span>
+            <button class="btn btn-outline cert-link" type="button" disabled title="Link sertifikat belum tersedia" aria-label="Lihat Sertifikat ISO 22000, link belum tersedia"><span class="ms" aria-hidden="true">visibility</span>Lihat Sertifikat</button>
+          </article>
+          <article class="cert-card">
+            <div class="cert-standard" aria-label="ISO 45001"><span>ISO</span><strong>45001</strong></div>
+            <h3 class="h-card">Keselamatan &amp; Kesehatan Kerja</h3>
+            <p class="body-sm">Pengelolaan risiko keselamatan dan kesehatan kerja untuk mendukung lingkungan kerja yang lebih aman.</p>
+            <span class="cert-scope">Sistem manajemen K3</span>
+            <button class="btn btn-outline cert-link" type="button" disabled title="Link sertifikat belum tersedia" aria-label="Lihat Sertifikat ISO 45001, link belum tersedia"><span class="ms" aria-hidden="true">visibility</span>Lihat Sertifikat</button>
+          </article>
+        </div>
+        <p class="cert-note body-sm"><span class="ms" aria-hidden="true">info</span><span>Konten contoh untuk pratinjau desain. Daftar ini bukan pernyataan kepemilikan sertifikasi perusahaan; dokumen asli belum ditampilkan.</span></p>
+      </div>
+    </section>
+
     <!-- ======================= KONTAK ======================= -->
     <section class="section" id="kontak" aria-labelledby="kontak-title">
       <div class="container">
@@ -1344,7 +1409,7 @@
             <p class="body-sm">Kirimkan detail rancangan atau pertanyaan spesifikasi mesin langsung ke WhatsApp resmi kami.</p>
             <a class="btn btn-wa btn-lg btn-block" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20berdiskusi%20mengenai%20kebutuhan%20pabrik%20AMDK." target="_blank" rel="noopener noreferrer">
               <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
-              Hubungi Admin WhatsApp
+              Hubungi Kami
             </a>
             <p class="cta-number tnum">+62 812-3456-7890</p>
           </div>
@@ -1406,10 +1471,11 @@
   </footer>
 
   <!-- ======================= FLOATING WHATSAPP ======================= -->
-  <a class="fab" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20langsung." target="_blank" rel="noopener noreferrer" aria-label="Hubungi Admin via WhatsApp">
-    <span class="fab-ping" aria-hidden="true"></span>
+  <a class="back-to-top" href="#top" aria-label="Kembali ke atas" title="Kembali ke atas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-7 7 7-7 7 7"/></svg>
+  </a>
+  <a class="fab" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20langsung." target="_blank" rel="noopener noreferrer" aria-label="Hubungi Kami">
     <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
-    <span class="fab-label">Hubungi Admin</span>
   </a>
 
   <!-- ======================= SPEC MODAL ======================= -->
@@ -1440,6 +1506,7 @@
     </div>
   </dialog>
 
+  <script src="assets/js/i18n.js"></script>
   <script>
     (function () {
       'use strict';
@@ -1454,7 +1521,7 @@
       function setNav(open) {
         mobileNav.hidden = !open;
         toggle.setAttribute('aria-expanded', String(open));
-        toggle.setAttribute('aria-label', open ? 'Tutup menu' : 'Buka menu');
+        toggle.setAttribute('aria-label', window.siteI18n.t(open ? 'Tutup menu' : 'Buka menu'));
         toggle.querySelector('.ms').textContent = open ? 'close' : 'menu';
       }
       toggle.addEventListener('click', function () { setNav(mobileNav.hidden); });
@@ -1462,7 +1529,7 @@
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && !mobileNav.hidden) { setNav(false); toggle.focus(); }
       });
-      window.matchMedia('(min-width: 1024px)').addEventListener('change', function (mq) { if (mq.matches) setNav(false); });
+      window.matchMedia('(min-width: 1200px)').addEventListener('change', function (mq) { if (mq.matches) setNav(false); });
 
       /* ---------- Active section in navigation ---------- */
       var navLinks = document.querySelectorAll('[data-nav]');
@@ -1499,7 +1566,7 @@
             item.hidden = !match;
             if (match) shown++;
           });
-          if (status) status.textContent = 'Menampilkan ' + shown + ' item untuk filter ' + btn.textContent.trim() + '.';
+          if (status) status.textContent = window.siteI18n.language === 'en' ? 'Showing ' + shown + ' items for ' + btn.textContent.trim() + '.' : 'Menampilkan ' + shown + ' item untuk filter ' + btn.textContent.trim() + '.';
         });
       });
 
@@ -1559,9 +1626,10 @@
       function fillModal(model) {
         var spec = SPECS[model];
         if (!spec) return false;
-        document.getElementById('spec-modal-title').textContent = 'Spesifikasi Teknis: ' + model;
-        document.getElementById('spec-modal-sub').textContent = spec.sub;
-        document.getElementById('spec-modal-cap').textContent = spec.cap;
+        modal.dataset.model = model;
+        document.getElementById('spec-modal-title').textContent = window.siteI18n.t('Spesifikasi Teknis') + ': ' + model;
+        document.getElementById('spec-modal-sub').textContent = window.siteI18n.t(spec.sub);
+        document.getElementById('spec-modal-cap').textContent = window.siteI18n.t(spec.cap);
 
         var tbody = document.getElementById('spec-modal-rows');
         tbody.textContent = '';
@@ -1570,8 +1638,8 @@
           var th = document.createElement('th');
           var td = document.createElement('td');
           th.scope = 'row';
-          th.textContent = row[0];
-          td.textContent = row[1];
+          th.textContent = window.siteI18n.t(row[0]);
+          td.textContent = window.siteI18n.t(row[1]);
           tr.appendChild(th);
           tr.appendChild(td);
           tbody.appendChild(tr);
@@ -1581,12 +1649,13 @@
         note.textContent = '';
         if (spec.noteLabel) {
           var strong = document.createElement('strong');
-          strong.textContent = spec.noteLabel + ' ';
+          strong.textContent = window.siteI18n.t(spec.noteLabel) + ' ';
           note.appendChild(strong);
         }
-        note.appendChild(document.createTextNode(spec.note || DEFAULT_NOTE));
+        note.appendChild(document.createTextNode(window.siteI18n.t(spec.note || DEFAULT_NOTE)));
 
         var msg = 'Halo Admin ' + BRAND + ', saya tertarik dengan spesifikasi ' + model + ' (' + spec.sub + ') dan ingin meminta penawaran resmi.';
+        if (window.siteI18n.language === 'en') msg = 'Hello ' + BRAND + ', I am interested in the specifications of ' + model + ' (' + window.siteI18n.t(spec.sub) + ') and would like to request a quotation.';
         document.getElementById('spec-modal-wa').href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
         return true;
       }
@@ -1618,6 +1687,11 @@
         if (e.target === modal || e.target.closest('[data-close]')) closeModal();
       });
       modal.addEventListener('close', onClosed);
+      document.addEventListener('site:languagechange', function () {
+        setNav(!mobileNav.hidden);
+        document.querySelectorAll('[data-filter-status]').forEach(function (status) { status.textContent = ''; });
+        if (modal.dataset.model) fillModal(modal.dataset.model);
+      });
 
       /* ---------- Footer year ---------- */
       document.getElementById('year').textContent = String(new Date().getFullYear());
