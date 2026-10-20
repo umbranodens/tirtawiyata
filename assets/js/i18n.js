@@ -149,6 +149,184 @@
     ['Sampel botol air mineral bentuk khusus di samping cetakan logam CNC dua cavity', 'Custom mineral water bottle samples beside a two-cavity CNC metal mould']
   ]);
 
+  translations.set("Supply Chain", "Supply Chain");
+  translations.set("Pendampingan rantai pasok AMDK yang mencakup bisnis, manajemen, produksi, ekspedisi, sertifikasi, legalitas, pemasaran, serta pengadaan barang dan jasa.", "Bottled water supply chain consulting covering business, management, production, logistics, certification, legal requirements, marketing, and procurement of goods and services.");
+  translations.set("Lihat Layanan Supply Chain", "View Supply Chain Services");
+  translations.set("Pengadaan Mesin AMDK", "Bottled Water Machinery Procurement");
+  translations.set("Pengadaan mesin filling cup, botol, dan galon, serta water treatment meliputi filter, ozon, dan karbon aktif sesuai kebutuhan pabrik Anda.", "Procurement of cup, bottle, and water jug filling machines, plus water treatment equipment including filters, ozone systems, and activated carbon to suit your plant.");
+  translations.set("Diskusikan Kebutuhan Mesin", "Discuss Machinery Requirements");
+  translations.set("Profil Perusahaan", "Company Profile");
+  translations.set("Mitra Konsultasi Industri Air Minum dalam Kemasan", "Your Bottled Water Industry Consulting Partner");
+  translations.set("PT Tirta Wiyata Investama adalah perusahaan konsultan yang berfokus pada industri Air Minum Dalam Kemasan (AMDK). Nama kami memadukan Tirta (Air), Wiyata (Pendidikan), dan Investama (Investasi yang Tepat). Filosofi ini mendasari layanan kami dalam membangun pengetahuan, meningkatkan keterampilan, dan membantu mitra mengambil keputusan investasi untuk pertumbuhan bisnis yang berkelanjutan.", "PT Tirta Wiyata Investama is a consulting company focused on the bottled water industry. Our name combines Tirta (Water), Wiyata (Education), and Investama (Sound Investment). This philosophy guides our work in building knowledge, developing skills, and helping partners make investment decisions for sustainable business growth.");
+  translations.set("Melalui jaringan mitra industri, kami mendampingi kebutuhan bisnis di seluruh rantai pasok AMDK, termasuk pengadaan barang dan jasa. Kami membantu Anda menilai pilihan sesuai kebutuhan pabrik; keputusan akhir tetap berada di tangan Anda.", "Through our industry partner network, we support business needs across the bottled water supply chain, including procurement of goods and services. We help you assess options for your plant; the final decision remains yours.");
+  translations.set("Menjadi pemimpin industri konsultan Air Minum Dalam Kemasan yang menghadirkan solusi inovatif dan berkelanjutan bagi klien di seluruh dunia.", "To become a leader in bottled water industry consulting, delivering innovative and sustainable solutions for clients worldwide.");
+  translations.set("Memberikan layanan konsultasi yang komprehensif untuk mencakup seluruh rantai pasokan industri Air Minum Dalam Kemasan.", "To provide comprehensive consulting services covering the entire bottled water industry supply chain.");
+  translations.set("Mengembangkan kemitraan strategis yang saling menguntungkan dengan pemangku kepentingan industri ini.", "To develop mutually beneficial strategic partnerships with stakeholders in the industry.");
+  translations.set("Mempromosikan kebijaksanaan, investasi yang tepat, dan teknologi terbaru untuk menciptakan masa depan yang lebih baik bagi industri Air Minum Dalam Kemasan.", "To promote wisdom, sound investment, and the latest technology to create a better future for the bottled water industry.");
+  translations.set("Kami mendampingi konsultasi bisnis dan manajemen, perencanaan produksi, ekspedisi, sertifikasi, legalitas, pemasaran, serta pengadaan barang dan jasa. Untuk kebutuhan peralatan, kami membantu menilai pilihan mesin, berkoordinasi dengan mitra, serta mendampingi negosiasi harga dan ketentuan kontrak. Pilihan akhir mengikuti kebutuhan dan keputusan Anda.", "We provide business and management consulting, production planning, logistics support, certification and legal assistance, marketing, and procurement of goods and services. For equipment needs, we help assess machinery options, coordinate with partners, and support price and contract negotiations. Final choices reflect your needs and decisions.");
+  translations.set("Pengadaan peralatan water treatment, meliputi filter, karbon aktif, dan sistem ozon, dengan pilihan yang disesuaikan dengan kebutuhan pengolahan air di pabrik Anda.", "Procurement of water treatment equipment, including filters, activated carbon, and ozone systems, selected to suit your plant water treatment needs.");
+  translations.set("Pengadaan mesin filling untuk kemasan cup, botol, dan galon. Jenis mesin dan kapasitas didiskusikan berdasarkan kebutuhan produksi Anda.", "Procurement of filling machines for cups, bottles, and water jugs. Machine types and capacities are discussed based on your production needs.");
+  translations.set("Konsultasi pembangunan pabrik, pendampingan supply chain, serta pengadaan mesin filling dan water treatment sesuai kebutuhan bisnis AMDK Anda.", "Plant development consulting, supply chain support, and procurement of filling machines and water treatment equipment for your bottled water business.");
+  translations.set("Konsultan industri AMDK untuk pendampingan bisnis, supply chain, serta pengadaan barang dan jasa sesuai kebutuhan klien.", "Bottled water industry consultants supporting business needs, supply chains, and procurement of goods and services for clients.");
+  translations.set("Tirta Wiyata Investama: konsultan industri AMDK untuk pembangunan pabrik, supply chain, serta pengadaan mesin filling dan water treatment sesuai kebutuhan klien.", "Tirta Wiyata Investama: bottled water industry consultants for plant development, supply chains, and procurement of filling machines and water treatment equipment to suit client needs.");
+  translations.set("Tirta Wiyata Investama: Konsultasi & Pengadaan AMDK", "Tirta Wiyata Investama: Bottled Water Consulting & Procurement");
+
+  translations.set("Pengadaan Mesin Cetak Galon & Botol", "Water Jug & Bottle Moulding Machinery Procurement");
+
+  translations.set("Pendampingan pembangunan pabrik AMDK yang menghubungkan strategi bisnis, kesiapan produksi, dan pengembangan usaha. Delapan layanan kami disusun dalam tiga fase agar setiap kebutuhan dibahas sesuai tahap bisnis Anda.", "Bottled water plant development support connecting business strategy, production readiness, and business growth. Our eight services are organised into three phases to address your needs at each business stage.");
+  translations.set("Analisis pasar, identifikasi peluang, dan rekomendasi strategi bisnis sebagai dasar rencana investasi Anda.", "Market analysis, opportunity assessment, and business strategy recommendations to inform your investment plan.");
+  translations.set("Perencanaan fasilitas produksi, kebutuhan teknologi, peralatan, dan sumber daya sesuai tujuan usaha.", "Production facility planning, including technology, equipment, and resource needs aligned with your business goals.");
+  translations.set("Pendampingan pengurusan legalitas, perizinan usaha, serta kebutuhan sertifikasi produk dan sistem manajemen.", "Support with legal documentation, business permits, and product and management system certification requirements.");
+  translations.set("Konsultasi penataan fasilitas dan optimalisasi proses produksi agar pilihan peralatan sesuai kebutuhan pabrik.", "Consulting on facility layout and production process improvements to match equipment choices to plant needs.");
+  translations.set("Bantuan pengadaan bahan baku, peralatan, dan jasa melalui jaringan mitra, termasuk negosiasi harga dan ketentuan kontrak.", "Support procuring raw materials, equipment, and services through our partner network, including price and contract negotiations.");
+  translations.set("Koordinasi kebutuhan teknis dengan mitra penyedia; Anda menilai pilihan dan menentukan keputusan pengadaan.", "Coordination of technical requirements with suppliers; you assess the options and make procurement decisions.");
+  translations.set("Pelatihan dan peningkatan keterampilan manajemen untuk mendukung operasional yang efisien dan efektif.", "Management training and skills development to support efficient and effective operations.");
+  translations.set("Dukungan ekspedisi, pengepakan, pengiriman, dan transportasi produk untuk kebutuhan distribusi Anda.", "Logistics support covering packing, shipping, and product transportation for your distribution needs.");
+  translations.set("Pengembangan strategi pemasaran, branding, dan promosi untuk menjangkau pasar serta mendukung pertumbuhan penjualan.", "Marketing strategy, branding, and promotion development to reach customers and support sales growth.");
+  translations.set("Butuh mesin untuk pabrik AMDK? Kami membantu merumuskan kebutuhan, menghubungkan Anda dengan supplier yang sesuai, serta mendampingi pembahasan spesifikasi, harga, dan ketentuan pengadaan. Pilihan mesin dan keputusan pembelian tetap di tangan Anda.", "Need machinery for your bottled water plant? We help define your requirements, connect you with suitable suppliers, and support discussions on specifications, pricing, and procurement terms. Machine selection and purchasing decisions remain yours.");
+  translations.set("Cup, Botol & Galon", "Cups, Bottles & Water Jugs");
+  translations.set("Pengadaan Mesin Filling", "Filling Machinery Procurement");
+  translations.set("Mesin pengisian air untuk kemasan galon, botol, dan cup dengan pilihan kapasitas serta tingkat otomatisasi sesuai target produksi. Kebutuhan pencucian, pengisian, penutupan botol atau galon, hingga sealing cup dibahas sesuai jenis lini. Kami membantu mencocokkan spesifikasi dengan pilihan dari supplier.", "Water filling machines for water jugs, bottles, and cups, with capacity and automation options to suit production targets. Rinsing, filling, bottle or jug capping, and cup sealing requirements are discussed for each line. We help match specifications to supplier options.");
+  translations.set("Diskusikan Mesin Filling", "Discuss Filling Machinery");
+  translations.set("Filter, Karbon Aktif & Ozon", "Filters, Activated Carbon & Ozone");
+  translations.set("Pengadaan Water Treatment", "Water Treatment Procurement");
+  translations.set("Peralatan pengolahan air mencakup filter sedimen atau multimedia, media karbon aktif, serta generator dan sistem injeksi ozon. Kami membantu membahas pilihan rangkaian pengolahan dengan supplier berdasarkan hasil analisis air baku, debit yang dibutuhkan, dan kebutuhan proses pabrik Anda.", "Water treatment equipment includes sediment or multimedia filters, activated carbon media, and ozone generation and injection systems. We help discuss treatment configurations with suppliers based on raw water analysis, required flow rate, and plant process needs.");
+  translations.set("Diskusikan Water Treatment", "Discuss Water Treatment");
+  translations.set("Kebutuhan Pengadaan Lain", "Other Procurement Needs");
+  translations.set("Butuh Mesin Lain?", "Need Another Machine?");
+  translations.set("Sampaikan fungsi mesin, kapasitas yang dituju, dan kendala produksi Anda. Kami bantu menelusuri pilihan supplier serta mendiskusikan spesifikasi dan kebutuhan pengadaannya bersama Anda.", "Tell us the machine function, target capacity, and production challenges. We help identify supplier options and discuss specifications and procurement requirements with you.");
+  translations.set("Konsultasikan Kebutuhan Anda", "Discuss Your Requirements");
+  translations.set("Pengadaan Water Treatment", "Water Treatment Procurement");
+  translations.set("Mesin Filling Cup", "Cup Filling Machines");
+
+  translations.set("Konsultasi Perencanaan & Pembangunan Pabrik", "Plant Planning & Development Consulting");
+  translations.set("Pendampingan perencanaan bisnis dan fasilitas pabrik AMDK, termasuk kebutuhan produksi, legalitas, sertifikasi, dan kesiapan operasional.", "Business and facility planning support for bottled water plants, covering production needs, legal requirements, certification, and operational readiness.");
+  translations.set("Bahas Rencana Pabrik", "Discuss Your Plant Plans");
+  translations.set("Supply Chain AMDK", "Bottled Water Supply Chain");
+  translations.set("Bantuan pengadaan mesin filling, water treatment, serta kebutuhan barang dan jasa industri AMDK melalui jaringan supplier sesuai kebutuhan pabrik Anda.", "Support procuring filling machines, water treatment equipment, and goods and services for the bottled water industry through a supplier network matched to your plant needs.");
+  translations.set("Diskusikan Kebutuhan Pengadaan", "Discuss Procurement Needs");
+  translations.set("Pendampingan untuk merencanakan atau mengembangkan pabrik AMDK. Kami membantu menyusun strategi bisnis, merencanakan fasilitas dan kebutuhan produksi, serta mendampingi legalitas, sertifikasi, dan kesiapan operasional sesuai tahap usaha Anda.", "Support for planning or developing a bottled water plant. We help shape business strategy, plan facilities and production requirements, and support legal requirements, certification, and operational readiness at each business stage.");
+  translations.set("Pengadaan Mesin, Barang & Jasa", "Machinery, Goods & Services Procurement");
+
+  translations.set("Kami menghubungkan kebutuhan pabrik Anda dengan supplier mesin dan mitra jasa, termasuk survei sumber air, pengeboran, serta pendampingan perizinan. Kami bantu membahas spesifikasi dan pengadaan; keputusan tetap di tangan Anda.", "We connect your plant requirements with machinery suppliers and service partners, including groundwater surveys, drilling, and permitting support. We help discuss specifications and procurement; decisions remain yours.");
+  translations.set("Supply Chain Barang", "Goods Procurement");
+  translations.set("Pengadaan Mesin & Peralatan", "Machinery & Equipment Procurement");
+  translations.set("Mesin filling galon, botol, dan cup, serta water treatment: filter, karbon aktif, dan sistem ozon. Kami hubungkan Anda dengan supplier sesuai kapasitas, spesifikasi, dan kebutuhan pengolahan air pabrik.", "Water jug, bottle, and cup filling machines, plus water treatment equipment: filters, activated carbon, and ozone systems. We connect you with suppliers to match your plant capacity, specifications, and water treatment needs.");
+  translations.set("Diskusikan Pengadaan Barang", "Discuss Equipment Procurement");
+  translations.set("Supply Chain Jasa", "Service Procurement");
+  translations.set("Jasa Sumber Air & Perizinan", "Groundwater & Permitting Services");
+  translations.set("Survei geolistrik untuk menilai potensi air tanah dan merencanakan titik serta kedalaman pengeboran.", "Geoelectrical surveys to assess groundwater potential and plan drilling locations and depths.");
+  translations.set("Koordinasi pengeboran sumur melalui mitra sesuai kajian teknis dan perizinan.", "Well drilling coordination through partners in line with technical assessments and permits.");
+  translations.set("Pendampingan dokumen dan pengajuan Izin Pengusahaan Air Tanah (SIPA) melalui OSS sesuai kewenangan instansi.", "Documentation and OSS application support for groundwater business permits (SIPA), according to the responsible authority.");
+  translations.set("Konsultasikan Kebutuhan Jasa", "Discuss Service Requirements");
+  translations.set("Kebutuhan Pengadaan Lain", "Other Procurement Needs");
+  translations.set("Ada Kebutuhan Lain?", "Have Other Requirements?");
+  translations.set("Ceritakan kebutuhan barang atau jasa untuk pabrik Anda. Kami bantu menelusuri pilihan mitra dan mendiskusikan lingkup pekerjaan, spesifikasi, serta proses pengadaannya.", "Tell us what goods or services your plant needs. We help identify partner options and discuss the scope of work, specifications, and procurement process.");
+  translations.set("Konsultasikan Kebutuhan Anda", "Discuss Your Requirements");
+
+  translations.set("Mesin filling untuk kemasan galon, botol, dan cup sesuai kapasitas produksi.", "Filling machines for water jugs, bottles, and cups to suit production capacity.");
+  translations.set("Peralatan water treatment: filter, karbon aktif, dan sistem ozon.", "Water treatment equipment: filters, activated carbon, and ozone systems.");
+  translations.set("Pemilihan supplier sesuai spesifikasi mesin dan kebutuhan pengolahan air pabrik Anda.", "Supplier selection matched to machine specifications and your plant water treatment needs.");
+
+  translations.set("Analisis pasar, identifikasi peluang, dan rekomendasi strategi untuk pertumbuhan serta ekspansi bisnis AMDK.", "Market analysis, business opportunity identification, and strategic recommendations for growth and expansion in bottled water.");
+  translations.set("Konsultasi dan bantuan pengurusan perizinan usaha serta dokumen legal sesuai peraturan industri AMDK.", "Consulting and assistance with business permits and legal documentation in line with bottled water industry regulations.");
+  translations.set("Bantuan pengurusan sertifikasi produk dan sistem manajemen sesuai standar industri dan peraturan yang berlaku.", "Assistance with product and management system certification in accordance with industry standards and applicable regulations.");
+  translations.set("Konsultasi perencanaan dan optimalisasi fasilitas produksi AMDK, termasuk peralatan, teknologi, dan pengelolaan sumber daya.", "Consulting on planning and optimising bottled water production facilities, including equipment, technology, and resource management.");
+  translations.set("Bantuan pengadaan bahan baku, peralatan, dan jasa, termasuk negosiasi harga serta ketentuan kontrak yang mendukung kebutuhan usaha.", "Assistance procuring raw materials, equipment, and services, including price and contract negotiations to support business needs.");
+  translations.set("Pelatihan dan peningkatan keterampilan manajemen untuk mendukung operasional yang efisien serta pengembangan strategi bisnis.", "Management training and skills development to support efficient operations and business strategy development.");
+  translations.set("Dukungan logistik untuk pengepakan, pengiriman, dan transportasi produk AMDK.", "Logistics support for packing, shipping, and transporting bottled water products.");
+  translations.set("Pengembangan strategi pemasaran, branding, dan promosi untuk menjangkau pasar yang lebih luas serta meningkatkan penjualan.", "Marketing strategy, branding, and promotion development to reach wider markets and increase sales.");
+
+  translations.set("Legalitas & Sertifikasi", "Permits & Certification");
+  translations.set("Pendampingan Legalitas & Sertifikasi AMDK", "Bottled Water Permitting & Certification Support");
+  translations.set("Siapkan persyaratan produk, sistem manajemen, dan pemanfaatan sumber air bersama TWI. Kami membantu memetakan kebutuhan, menyiapkan dokumen, serta mendampingi proses pengajuan dan kesiapan pemeriksaan.", "Prepare product, management system, and water resource requirements with TWI. We help identify your needs, prepare documentation, and support applications and assessment readiness.");
+  translations.set("Standar Mutu Produk", "Product Quality Standards");
+  translations.set("Pendampingan pemenuhan Standar Nasional Indonesia sesuai jenis produk AMDK dan skema sertifikasi yang berlaku.", "Support meeting Indonesian National Standards for your bottled water category and the applicable certification scheme.");
+  translations.set("Penyiapan dokumen mutu dan kebutuhan pengujian produk.", "Preparation of quality documentation and product testing requirements.");
+  translations.set("Pendampingan kesiapan audit dan proses sertifikasi melalui LSPro.", "Audit readiness and certification process support through a product certification body (LSPro).");
+  translations.set("Rujukan resmi", "Official reference");
+  translations.set("Jaminan Produk Halal", "Halal Product Assurance");
+  translations.set("Pendampingan sertifikasi halal melalui kesiapan bahan, proses produksi, dan Sistem Jaminan Produk Halal (SJPH).", "Halal certification support through preparation of materials, production processes, and the Halal Product Assurance System (SJPH).");
+  translations.set("Penyiapan data bahan, alur produksi, dan dokumen SJPH.", "Preparation of ingredient data, production workflows, and SJPH documentation.");
+  translations.set("Pendampingan pengajuan melalui SIHALAL dan persiapan pemeriksaan.", "SIHALAL application support and assessment preparation.");
+  translations.set("Rujukan resmi", "Official reference");
+  translations.set("Izin Edar Produk AMDK", "Bottled Water Product Registration");
+  translations.set("Pendampingan registrasi pangan olahan untuk memperoleh izin edar BPOM bagi produk AMDK yang diproduksi di Indonesia.", "Processed food registration support for BPOM marketing authorisation for bottled water produced in Indonesia.");
+  translations.set("Penyiapan data produk, rancangan label, dan dokumen persyaratan.", "Preparation of product data, proposed labels, and required documentation.");
+  translations.set("Pendampingan kesiapan sarana produksi dan pengajuan izin edar BPOM MD.", "Production facility readiness and BPOM MD registration support.");
+  translations.set("Rujukan resmi", "Official reference");
+  translations.set("Sistem Manajemen Mutu", "Quality Management System");
+  translations.set("Pendampingan penerapan sistem manajemen mutu untuk menjaga konsistensi proses, memenuhi kebutuhan pelanggan, dan mendorong perbaikan berkelanjutan.", "Quality management system implementation support for consistent processes, customer requirements, and continual improvement.");
+  translations.set("Penyusunan prosedur kerja, sasaran mutu, dan pengendalian dokumen.", "Development of procedures, quality objectives, and document controls.");
+  translations.set("Pendampingan audit internal dan kesiapan audit lembaga sertifikasi.", "Internal audit support and preparation for certification body audits.");
+  translations.set("Rujukan resmi", "Official reference");
+  translations.set("Izin Pengusahaan Air Tanah", "Groundwater Business Permit");
+  translations.set("Pendampingan perizinan penggunaan air tanah untuk kegiatan usaha AMDK, sesuai kondisi lokasi dan kewenangan instansi.", "Groundwater permitting support for bottled water business activities, according to site conditions and the responsible authority.");
+  translations.set("Penyiapan data lokasi, kebutuhan air, dan dokumen teknis sumur.", "Preparation of site data, water requirements, and technical well documentation.");
+  translations.set("Pendampingan permohonan melalui OSS dan pemenuhan persyaratan instansi terkait.", "OSS application support and assistance meeting the relevant authority requirements.");
+  translations.set("Rujukan resmi", "Official reference");
+  translations.set("Kebutuhan Pabrik Anda", "Your Plant Requirements");
+  translations.set("Mulai dari Kebutuhan Usaha Anda", "Start with Your Business Needs");
+  translations.set("Sedang merencanakan pabrik, menyiapkan produk baru, atau melengkapi perizinan? Ceritakan kondisi usaha Anda agar kami dapat membantu menentukan dokumen dan langkah yang perlu disiapkan.", "Planning a plant, preparing a new product, or completing permits? Tell us about your business so we can help identify the documents and steps to prepare.");
+  translations.set("Konsultasikan Legalitas AMDK", "Discuss Permits & Certification");
+  translations.set("Mesin Filling Galon", "Water Jug Filling Machines");
+  translations.set("Mesin Filling Botol", "Bottle Filling Machines");
+  translations.set("Legalitas", "Permits & Certification");
+  translations.set("Legalitas & Sertifikasi", "Permits & Certification");
+  translations.set("Layanan Legalitas & Sertifikasi", "Permitting & Certification Services");
+
+  translations.set("Konsultasi Pabrik AMDK", "Bottled Water Plant Consulting");
+  translations.set("Perencanaan Bisnis & Pengembangan Produksi", "Business Planning & Production Development");
+  translations.set("Pendampingan strategi bisnis, perencanaan fasilitas produksi, serta kesiapan manajemen, legalitas, dan sertifikasi sesuai kebutuhan usaha Anda.", "Business strategy and production facility planning support, covering management readiness, legal requirements, and certification to suit your business needs.");
+
+  translations.set("Foto ilustrasi sementara", "Temporary illustrative image");
+  translations.set("Cerita Pertumbuhan Mitra", "Our Partners’ Growth Stories");
+  translations.set("Pencapaian Mitra Bisnis Kami", "Business Partner Achievements");
+  translations.set("Ilustrasi sementara untuk cerita PT Viura Indo Tirta", "Temporary illustrative image for PT Viura Indo Tirta");
+  translations.set("Pengembangan Fasilitas & Ekspansi Pasar", "Facility Development & Market Expansion");
+  translations.set("Dukungan untuk mengembangkan fasilitas produksi dan memperluas pasar AMDK.", "Support for developing production facilities and expanding the bottled water market.");
+  translations.set("Perencanaan pengembangan fasilitas produksi.", "Production facility development planning.");
+  translations.set("Pendampingan strategi untuk menjangkau pasar yang lebih luas.", "Strategy support to reach a wider market.");
+  translations.set("Peningkatan pangsa pasar dalam 2 tahun.", "Market share growth over 2 years.");
+  translations.set("Ilustrasi sementara untuk cerita PT Sun Water International", "Temporary illustrative image for PT Sun Water International");
+  translations.set("Sertifikasi Produk & Sistem Manajemen", "Product & Management System Certification");
+  translations.set("Pendampingan pengurusan sertifikasi untuk mendukung kualitas produk dan kepercayaan konsumen.", "Certification support to strengthen product quality and consumer confidence.");
+  translations.set("Bantuan dalam proses sertifikasi produk.", "Assistance with product certification.");
+  translations.set("Pendampingan pengurusan sertifikasi sistem manajemen.", "Support with management system certification.");
+  translations.set("Mutu", "Quality");
+  translations.set("Kualitas produk dan kepercayaan konsumen.", "Product quality and consumer confidence.");
+  translations.set("Ilustrasi sementara untuk cerita M-QUA", "Temporary illustrative image for M-QUA");
+  translations.set("Strategi Pemasaran AMDK", "Bottled Water Marketing Strategy");
+  translations.set("Konsultasi strategi pemasaran untuk mendukung pertumbuhan penjualan produk AMDK.", "Marketing strategy consulting to support bottled water sales growth.");
+  translations.set("Pengembangan strategi pemasaran sesuai kebutuhan bisnis.", "Development of marketing strategies to suit business needs.");
+  translations.set("Pendampingan arah pemasaran untuk mendukung penjualan.", "Marketing direction support to strengthen sales.");
+  translations.set("Peningkatan penjualan dalam 18 bulan.", "Sales growth over 18 months.");
+  translations.set("Pilih cerita mitra", "Select a partner story");
+  translations.set("Tampilkan cerita PT Viura Indo Tirta", "Show the PT Viura Indo Tirta story");
+  translations.set("Tampilkan cerita PT Sun Water International", "Show the PT Sun Water International story");
+  translations.set("Tampilkan cerita M-QUA", "Show the M-QUA story");
+  translations.set("Cerita sebelumnya", "Previous story");
+  translations.set("Jeda slide otomatis", "Pause automatic slides");
+  translations.set("Cerita berikutnya", "Next story");
+  translations.set("Jaringan Kemitraan", "Our Partner Network");
+  translations.set("Klien Kami", "Our Clients");
+  translations.set("Pengalaman Bermitra", "A Partnership in Practice");
+  translations.set("Testimoni Klien", "Client Testimonial");
+  translations.set("Ilustrasi sementara fasilitas produksi AMDK untuk cerita PT Viura Indo Tirta", "Temporary illustration of bottled water production facilities for the PT Viura Indo Tirta story");
+  translations.set("Pendampingan sejak perancangan bisnis, pengembangan fasilitas produksi, hingga strategi pemasaran pabrik AMDK.", "Support spanning business planning, production facility development, and marketing strategy for a bottled water plant.");
+  translations.set("“PT Tirta Wiyata Investama telah menjadi mitra yang sangat berharga… Mereka memiliki tim yang berpengalaman dan solusi inovatif…”", "“PT Tirta Wiyata Investama has been a highly valued partner… They have an experienced team and innovative solutions…”");
+  translations.set("Klien produksi", "Production clients");
+  translations.set("Shift produksi rata-rata", "Average production shifts");
+  translations.set("Pencapaian Mitra", "Partner Achievements");
+  translations.set("Slide", "Slide");
+  translations.set("dari", "of");
+  translations.set("Putar slide otomatis", "Play automatic slides");
+
+  translations.set("Alamat Kantor", "Office Address");
+  translations.set("Kontak Kami", "Contact Us");
+  translations.set("WhatsApp Konsultasi", "Consultation WhatsApp");
+  translations.set("Diskusikan rencana pabrik, kebutuhan pengadaan, atau pendampingan legalitas AMDK bersama tim konsultan kami.", "Discuss your plant plans, procurement needs, or bottled water permitting with our consulting team.");
+
   var textEntries = [];
   var walker = document.createTreeWalker(document.documentElement, NodeFilter.SHOW_TEXT);
   while (walker.nextNode()) {
@@ -172,13 +350,19 @@
     if (!message) return;
     var english = message
       .replace('Halo Admin Tirta Wiyata Investama, ', 'Hello Tirta Wiyata Investama, ')
-      .replace('saya ingin berkonsultasi mengenai perencanaan pabrik AMDK dan katalog mesin.', 'I would like to discuss bottled water plant planning and your machinery catalog.')
+      .replace('saya ingin berkonsultasi mengenai perencanaan pabrik AMDK dan pengadaan barang atau jasa.', 'I would like to discuss bottled water plant planning and procurement of goods or services.')
       .replace('saya ingin konsultasi tentang proyek pabrik AMDK.', 'I would like to discuss a bottled water plant project.')
-      .replace('saya ingin Konsultasi Pembangunan Pabrik AMDK.', 'I would like a consultation on bottled water plant development.')
+      .replace('saya ingin Konsultasi Perencanaan dan Pembangunan Pabrik AMDK.', 'I would like a consultation on bottled water plant planning and development.')
       .replace('saya ingin menanyakan mesin atau perlengkapan lain untuk kebutuhan pabrik saya.', 'I would like to ask about other machinery or equipment for my plant.')
       .replace('saya ingin mengajukan Custom Order cetakan botol/galon.', 'I would like to discuss a custom bottle or water jug mould order.')
       .replace('saya ingin berdiskusi mengenai kebutuhan pabrik AMDK.', 'I would like to discuss my bottled water plant requirements.')
       .replace('saya ingin konsultasi langsung.', 'I would like to arrange a consultation.')
+      .replace("saya ingin konsultasi pendampingan legalitas dan sertifikasi AMDK (SNI, Halal, BPOM, ISO 9001, atau SIPA).", "I would like to discuss bottled water permitting and certification support (SNI, Halal, BPOM, ISO 9001, or SIPA).")
+      .replace("saya ingin konsultasi pengadaan mesin filling dan peralatan water treatment.", "I would like to discuss procurement of filling machines and water treatment equipment.")
+      .replace("saya ingin konsultasi jasa geolistrik, pengeboran, dan pendampingan perizinan air tanah SIPA.", "I would like to discuss geoelectrical surveys, well drilling, and groundwater permit (SIPA) support.")
+      .replace("saya ingin konsultasi kebutuhan pengadaan barang atau jasa untuk pabrik AMDK.", "I would like to discuss procurement of goods or services for my bottled water plant.")
+      .replace('saya ingin konsultasi pengadaan mesin filling untuk galon, botol, atau cup.', 'I would like to discuss procurement of water jug, bottle, or cup filling machinery.')
+      .replace('saya ingin konsultasi pengadaan peralatan water treatment.', 'I would like to discuss procurement of water treatment equipment.')
       .replace('saya ingin tanya ketersediaan ', 'I would like to check availability of ')
       .replace('saya minta penawaran harga untuk ', 'I would like to request a quotation for ')
       .replace('Sistem Pengolahan Air', 'water treatment systems')

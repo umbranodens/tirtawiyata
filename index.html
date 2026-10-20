@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tirta Wiyata Investama — Solusi Pabrik AMDK &amp; Mesin Cetak Galon/Botol</title>
-  <meta name="description" content="Tirta Wiyata Investama: konsultasi pembangunan pabrik air minum dalam kemasan (AMDK), supplier perlengkapan pabrik, serta mesin cetak galon dan botol dari perencanaan hingga siap beroperasi.">
+  <title>Tirta Wiyata Investama: Konsultasi &amp; Pengadaan AMDK</title>
+  <meta name="description" content="Tirta Wiyata Investama: konsultan industri AMDK untuk pembangunan pabrik, supply chain, serta pengadaan mesin filling dan water treatment sesuai kebutuhan klien.">
   <meta name="theme-color" content="#0B2545">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="id_ID">
@@ -20,7 +20,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=architecture,arrow_forward,call,chevron_right,close,info,location_on,menu,precision_manufacturing,schedule,support_agent,tune,verified,verified_user,view_in_ar,visibility,water_drop&display=block">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=architecture,arrow_forward,call,chevron_right,close,fact_check,info,location_on,mail,menu,open_in_new,precision_manufacturing,schedule,support_agent,tune,verified,verified_user,view_in_ar,visibility,water_drop&display=block">
+  <link rel="stylesheet" href="assets/css/partners.css">
   <link rel="preload" as="image" href="assets/img/hero-pabrik-amdk-1400.webp" imagesrcset="assets/img/hero-pabrik-amdk-800.webp 800w, assets/img/hero-pabrik-amdk-1400.webp 1400w" imagesizes="(min-width: 1280px) 1184px, 100vw">
 
   <style>
@@ -334,7 +335,7 @@
     @media (min-width: 1024px) { .hero-media { height: 460px; } .hero-media figcaption p { font-size: 18px; line-height: 28px; } }
 
     .service-grid { display: grid; gap: 16px; }
-    @media (min-width: 900px) { .service-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (min-width: 900px) { .service-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     .service-card {
       display: flex; flex-direction: column;
       padding: 24px; border-radius: var(--r-lg);
@@ -370,8 +371,6 @@
     .about-copy .h-section { margin-bottom: 16px; }
     .about-copy .lead { color: var(--ink); margin-bottom: 16px; }
     .about-copy > .about-note { font-size: 15px; line-height: 24px; color: var(--ink-2); margin-bottom: 24px; }
-    .about-cert-link { width: 100%; margin-bottom: 24px; }
-    @media (min-width: 640px) { .about-cert-link { width: auto; } }
     .about-card .vm-card {
       padding: 24px 0 0; background: transparent;
       border: 0; border-top: 1px solid #d6e3ed; border-radius: 0;
@@ -456,6 +455,9 @@
     .equip-media img { width: 100%; height: 100%; object-fit: cover; }
     .equip-card .h-card { margin: 4px 0 6px; }
     .equip-card .body-sm { flex: 1; margin-bottom: 16px; }
+    .equip-scope { padding-left: 18px; list-style: disc; }
+    .equip-scope li + li { margin-top: 8px; }
+    .equip-scope li::marker { color: var(--cyan); }
     .equip-cta {
       display: flex; align-items: center; justify-content: space-between; gap: 12px;
       min-height: 44px; padding: 10px 14px;
@@ -542,103 +544,26 @@
     .machine-actions { display: grid; gap: 8px; padding: 0 16px 16px; }
 
     /* ==========================================================
-       Custom order
-       ========================================================== */
-    .custom-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 40px; align-items: center; }
-    @media (min-width: 1024px) { .custom-grid { grid-template-columns: 1fr 1fr; gap: 48px; } }
-    .custom-copy .h-section { margin: 6px 0 16px; }
-    .custom-copy .lead { color: var(--ink); margin-bottom: 20px; }
-    .mini-steps { display: grid; gap: 8px; margin-bottom: 20px; }
-    .mini-steps li { display: flex; align-items: flex-start; gap: 12px; padding: 12px; border-radius: var(--r-md); background: var(--bg-low); }
-    .mini-num {
-      display: grid; place-items: center; flex: none;
-      width: 32px; height: 32px; border-radius: var(--r-md);
-      background: var(--navy); color: #fff;
-      font: 700 14px/1 var(--font-display); font-feature-settings: "tnum" 1;
-    }
-    .mini-steps .body-sm { margin-top: 2px; }
-    .note {
-      margin-bottom: 24px; padding: 14px 16px;
-      border-left: 3px solid var(--cyan-2); border-radius: var(--r-md);
-      background: var(--bg-mid);
-    }
-    .note-head { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
-    .note-head .ms { font-size: 16px; color: var(--cyan); }
-    .note p { font-weight: 500; }
-    .custom-copy .btn-wa { width: 100%; }
-    @media (min-width: 640px) { .custom-copy .btn-wa { width: auto; } }
-
-    .cad-panel { padding: 16px; border-radius: var(--r-xl); background: var(--bg-mid); box-shadow: inset 0 2px 6px rgba(11, 37, 69, .06); }
-    @media (min-width: 640px) { .cad-panel { padding: 24px; } }
-    .cad-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; margin-bottom: 16px; }
-    .cad-title { display: flex; align-items: center; gap: 8px; color: var(--navy-ink); }
-    .cad-title .ms { color: var(--cyan); }
-    .cad-title .spec-k { color: var(--navy-ink); font-weight: 700; }
-    .cad-chip { padding: 2px 8px; border-radius: var(--r-sm); background: var(--bg); color: var(--ink-2); font: 600 12px/20px var(--font-body); font-feature-settings: "tnum" 1; }
-    .cad-view { position: relative; overflow: hidden; height: 260px; border-radius: var(--r-lg); background: var(--navy-ink); }
-    @media (min-width: 640px) { .cad-view { height: 340px; } }
-    .cad-view img { width: 100%; height: 100%; object-fit: cover; opacity: .94; }
-    .cad-readout {
-      position: absolute; left: 12px; right: 12px; bottom: 12px;
-      display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 16px;
-      padding: 8px 12px; border-radius: var(--r-sm);
-      background: rgba(255, 255, 255, .92);
-      -webkit-backdrop-filter: blur(8px);
-      backdrop-filter: blur(8px);
-      font: 500 13px/20px var(--font-body); font-feature-settings: "tnum" 1; color: var(--navy-ink);
-    }
-    .cad-readout b { font-weight: 600; }
-    .cad-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 16px; }
-    .cad-stats div { padding: 8px 6px; border-radius: var(--r-sm); background: var(--bg); text-align: center; }
-    .cad-stats dt { font: 600 12px/16px var(--font-body); color: var(--ink-2); }
-    .cad-stats dd { margin: 2px 0 0; font: 700 14px/20px var(--font-body); font-feature-settings: "tnum" 1; color: var(--navy-ink); }
-
-    /* ==========================================================
        Portfolio
        ========================================================== */
-    .project-grid { display: grid; gap: 16px; }
-    @media (min-width: 640px) { .project-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (min-width: 1024px) { .project-grid { grid-template-columns: repeat(3, 1fr); } }
-    .project-card {
-      display: flex; flex-direction: column; overflow: hidden;
-      border: 1px solid var(--line); border-radius: var(--r-lg);
-      background: var(--bg);
-      transition: border-color .2s ease, box-shadow .2s ease;
-    }
-    .project-card:hover { border-color: var(--cyan-2); box-shadow: var(--shadow-hover); }
-    .project-media { position: relative; aspect-ratio: 16 / 10; background: var(--bg-low); }
-    .project-media img { width: 100%; height: 100%; object-fit: cover; }
-    .project-tags { position: absolute; top: 12px; left: 12px; right: 12px; display: flex; justify-content: space-between; align-items: center; }
-    .project-tags .badge { position: static; }
-    .year { padding: 2px 8px; border-radius: var(--r-sm); background: var(--bg); color: var(--navy-ink); font: 700 13px/20px var(--font-body); font-feature-settings: "tnum" 1; box-shadow: 0 1px 4px rgba(11, 37, 69, .12); }
-    .project-body { padding: 16px; }
-    @media (min-width: 768px) { .project-body { padding: 20px; } }
-    .project-body .h-card { margin: 4px 0 6px; }
-
-    .empty-state {
-      display: flex; flex-direction: column; align-items: center; text-align: center;
-      padding: 40px 16px; border-radius: var(--r-lg); background: var(--bg);
-    }
-
+    .legal-card { min-width: 0; scroll-margin-top: calc(var(--nav-h) + 24px); }
+    .legal-code { font: 800 32px/40px var(--font-display); letter-spacing: -.02em; color: var(--navy); margin-bottom: 16px; }
+    .legal-card .body-sm { flex: none; margin-bottom: 16px; }
+    .legal-scope { padding-left: 18px; list-style: disc; color: var(--ink-2); }
+    .legal-scope li + li { margin-top: 8px; }
+    .legal-scope li::marker { color: var(--cyan); }
+    .legal-card.legal-card--consult { background: var(--cyan-wash); border-color: #c3e4e8; color: var(--ink); }
+    .legal-card--consult .icon-tile { background: var(--navy); margin-bottom: 20px; }
+    .legal-card--consult .eyebrow { color: var(--cyan); margin-bottom: 8px; }
+    .legal-card--consult .h-card { color: var(--navy-ink); }
+    .legal-card--consult .body-sm { color: var(--ink-2); }
+    .legal-card--consult .btn { margin-top: auto; white-space: normal; text-align: center; background: var(--navy); border-color: var(--navy); color: var(--bg); box-shadow: none; }
+    .legal-card--consult .btn:hover { background: var(--navy-2); border-color: var(--navy-2); }
+    .legal-card--consult .btn .ico-wa { color: var(--wa); }
     .cert-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
-    .cert-card {
-      display: flex; flex-direction: column;
-      min-width: 0; padding: 24px 20px; border: 1px solid var(--line);
-      border-top: 3px solid var(--cyan); border-radius: var(--r-lg); background: var(--bg);
-    }
-    .cert-standard { display: flex; align-items: baseline; gap: 8px; margin-bottom: 24px; color: var(--navy); }
-    .cert-standard span { font: 700 16px/24px var(--font-display); }
-    .cert-standard strong { font: 800 36px/44px var(--font-display); letter-spacing: -.02em; }
+    .cert-card { display: flex; flex-direction: column; min-width: 0; padding: 24px 20px; border: 1px solid var(--line); border-top: 3px solid var(--cyan); border-radius: var(--r-lg); background: var(--bg); }
     .cert-card .h-card { margin-bottom: 8px; }
     .cert-card .body-sm { flex: 1; margin-bottom: 20px; }
-    .cert-link { width: 100%; margin-top: 16px; }
-    .cert-link:disabled {
-      cursor: not-allowed; background: var(--bg-low); color: var(--ink-2);
-      border-color: var(--line); box-shadow: none; transform: none;
-    }
-    .cert-scope { display: block; padding-top: 14px; border-top: 1px solid var(--line); font-size: 13px; line-height: 20px; color: var(--cyan); }
-    .cert-note { display: flex; align-items: flex-start; gap: 10px; margin-top: 20px; color: var(--ink-2); }
-    .cert-note .ms { flex-shrink: 0; font-size: 20px; color: var(--cyan); }
     @media (min-width: 640px) { .cert-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
     @media (min-width: 1024px) { .cert-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
@@ -650,6 +575,9 @@
     @media (min-width: 1024px) { .contact-card { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 40px; align-items: center; padding: 40px; } }
     .contact-copy .h-section { margin: 6px 0 8px; }
     .contact-copy .lead { margin-bottom: 24px; }
+    .contact-list li > div { min-width: 0; }
+    .contact-list a { display: inline-block; max-width: 100%; min-height: 44px; padding-block: 10px; overflow-wrap: anywhere; }
+    .footer-contact a { overflow-wrap: anywhere; }
     .contact-list { display: grid; gap: 14px; }
     .contact-list li { display: flex; align-items: flex-start; gap: 12px; }
     .contact-list .ms { font-size: 22px; color: var(--cyan); margin-top: 1px; }
@@ -781,6 +709,10 @@
     }
     html.modal-open { overflow: hidden; }
 
+    @media (max-width: 639px) {
+      .fab, .back-to-top { display: none; }
+    }
+
     /* ---------- Motion preferences ---------- */
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -811,9 +743,9 @@
           <li><a href="#beranda" data-nav>Beranda</a></li>
           <li><a href="#tentang" data-nav>Tentang Kami</a></li>
           <li><a href="#layanan" data-nav>Layanan</a></li>
-          <li><a href="#produk" data-nav>Produk</a></li>
-          <li><a href="#custom" data-nav>Custom Order</a></li>
-          <li><a href="#portfolio" data-nav>Portfolio</a></li>
+          <li><a href="#legalitas" data-nav>Legalitas</a></li>
+
+          <li><a href="#portfolio" data-nav>Pencapaian Mitra</a></li>
           <li><a href="#kontak" data-nav>Kontak</a></li>
         </ul>
       </nav>
@@ -823,7 +755,7 @@
           <button type="button" data-language="id" lang="id" aria-label="Bahasa Indonesia" aria-pressed="true"><img class="language-flag" src="assets/flags/id.svg" width="20" height="14" alt="" aria-hidden="true">ID</button>
           <button type="button" data-language="en" lang="en" aria-label="English" aria-pressed="false"><img class="language-flag" src="assets/flags/gb.svg" width="20" height="14" alt="" aria-hidden="true">EN</button>
         </div>
-        <a class="btn btn-wa btn-sm header-contact" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perencanaan%20pabrik%20AMDK%20dan%20katalog%20mesin." target="_blank" rel="noopener noreferrer">
+        <a class="btn btn-wa btn-sm header-contact" href="https://wa.me/6282128612349?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20berkonsultasi%20mengenai%20perencanaan%20pabrik%20AMDK%20dan%20pengadaan%20barang%20atau%20jasa." target="_blank" rel="noopener noreferrer">
           <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
           <span>Hubungi Kami</span>
         </a>
@@ -839,12 +771,12 @@
           <li><a href="#beranda" data-nav>Beranda <span class="ms" aria-hidden="true">chevron_right</span></a></li>
           <li><a href="#tentang" data-nav>Tentang Kami <span class="ms" aria-hidden="true">chevron_right</span></a></li>
           <li><a href="#layanan" data-nav>Layanan Rekayasa <span class="ms" aria-hidden="true">chevron_right</span></a></li>
-          <li><a href="#produk" data-nav>Katalog Mesin <span class="ms" aria-hidden="true">chevron_right</span></a></li>
-          <li><a href="#custom" data-nav>Custom Order <span class="ms" aria-hidden="true">chevron_right</span></a></li>
-          <li><a href="#portfolio" data-nav>Portfolio Pabrik <span class="ms" aria-hidden="true">chevron_right</span></a></li>
+          <li><a href="#legalitas" data-nav>Legalitas &amp; Sertifikasi <span class="ms" aria-hidden="true">chevron_right</span></a></li>
+
+          <li><a href="#portfolio" data-nav>Pencapaian Mitra <span class="ms" aria-hidden="true">chevron_right</span></a></li>
           <li><a href="#kontak" data-nav>Kontak <span class="ms" aria-hidden="true">chevron_right</span></a></li>
         </ul>
-        <a class="btn btn-wa btn-lg btn-block" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20tentang%20proyek%20pabrik%20AMDK." target="_blank" rel="noopener noreferrer">
+        <a class="btn btn-wa btn-lg btn-block" href="https://wa.me/6282128612349?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20tentang%20proyek%20pabrik%20AMDK." target="_blank" rel="noopener noreferrer">
           <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
           Hubungi Kami
         </a>
@@ -860,9 +792,9 @@
         <div class="hero-head">
           <span class="chip eyebrow"><span class="chip-dot" aria-hidden="true"></span>Solusi Pabrik &amp; Mesin Siap Operasi</span>
           <h1 class="h-display" id="hero-title">Wujudkan Pabrik Air Minum Anda, dari Perencanaan hingga Siap Beroperasi.</h1>
-          <p class="lead">Konsultasi pembangunan pabrik, perlengkapan produksi, serta mesin cetak galon dan botol untuk kebutuhan bisnis Anda.</p>
+          <p class="lead">Konsultasi pembangunan pabrik, pendampingan supply chain, serta pengadaan mesin filling dan water treatment sesuai kebutuhan bisnis AMDK Anda.</p>
           <div class="hero-ctas">
-            <a class="btn btn-wa btn-lg" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20tentang%20proyek%20pabrik%20AMDK." target="_blank" rel="noopener noreferrer">
+            <a class="btn btn-wa btn-lg" href="https://wa.me/6282128612349?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20tentang%20proyek%20pabrik%20AMDK." target="_blank" rel="noopener noreferrer">
               <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
               Hubungi Kami
             </a>
@@ -889,21 +821,17 @@
         <div class="service-grid">
           <article class="service-card">
             <div class="icon-tile" aria-hidden="true"><span class="ms">architecture</span></div>
-            <h2 class="h-card">Konsultasi Pembangunan Pabrik</h2>
-            <p class="body-sm">Layout alur proses, studi kelayakan lahan, kalkulasi kapasitas, serta pendampingan regulasi dan tata letak higienis hingga pabrik beroperasi.</p>
-            <a class="link-arrow" href="#layanan">Pelajari Alur Konsultasi <span class="ms" aria-hidden="true">chevron_right</span></a>
+            <h2 class="h-card">Konsultasi Pabrik AMDK</h2>
+            <p class="h-title">Perencanaan Bisnis &amp; Pengembangan Produksi</p>
+            <p class="body-sm">Pendampingan strategi bisnis, perencanaan fasilitas produksi, serta kesiapan manajemen, legalitas, dan sertifikasi sesuai kebutuhan usaha Anda.</p>
+            <a class="link-arrow" href="#layanan">Bahas Rencana Pabrik <span class="ms" aria-hidden="true">chevron_right</span></a>
           </article>
           <article class="service-card">
             <div class="icon-tile icon-tile--cyan" aria-hidden="true"><span class="ms">water_drop</span></div>
-            <h2 class="h-card">Supplier Perlengkapan Pabrik</h2>
-            <p class="body-sm">Unit water treatment (UF/RO), perpipaan sanitary food-grade, tangki stainless steel bertekanan, hingga sistem pengisian dan penutupan higienis.</p>
-            <a class="link-arrow" href="#layanan-perlengkapan">Katalog Komponen Lini <span class="ms" aria-hidden="true">chevron_right</span></a>
-          </article>
-          <article class="service-card">
-            <div class="icon-tile icon-tile--ink" aria-hidden="true"><span class="ms">precision_manufacturing</span></div>
-            <h2 class="h-card">Mesin Cetak Galon &amp; Botol</h2>
-            <p class="body-sm">Mesin blow moulding presisi tinggi untuk botol PET 330 ml–1.500 ml serta mesin cetak galon polikarbonat / PET kapasitas 5 L dan 19 L.</p>
-            <a class="link-arrow" href="#produk">Spesifikasi Mesin Cetak <span class="ms" aria-hidden="true">chevron_right</span></a>
+            <h2 class="h-card">Supply Chain AMDK</h2>
+            <p class="h-title">Pengadaan Mesin, Barang &amp; Jasa</p>
+            <p class="body-sm">Bantuan pengadaan mesin filling, water treatment, serta kebutuhan barang dan jasa industri AMDK melalui jaringan supplier sesuai kebutuhan pabrik Anda.</p>
+            <a class="link-arrow" href="#layanan-perlengkapan">Diskusikan Kebutuhan Pengadaan <span class="ms" aria-hidden="true">chevron_right</span></a>
           </article>
         </div>
       </div>
@@ -920,21 +848,23 @@
         </figure>
 
         <div class="about-copy">
-          <span class="chip eyebrow">Profil Korporat Rekayasa</span>
-          <h2 class="h-section" id="tentang-title">Mitra Strategis Rekayasa Industri Air Minum dalam Kemasan (AMDK)</h2>
-          <p class="lead">Tirta Wiyata Investama hadir sebagai mitra strategis bagi pemilik lahan, investor perintis, maupun korporasi yang ingin mendirikan fasilitas produksi air minum dalam kemasan. Kami memfasilitasi setiap tahap dari rekayasa kelayakan (feasibility), penyusunan tata letak ruang higienis, penyediaan permesinan, hingga pendampingan uji alir komersial.</p>
-          <p class="about-note">Dengan pengalaman instalasi di berbagai wilayah Indonesia, pendekatan kami bertumpu pada keandalan mekanikal jangka panjang, efisiensi konsumsi daya, serta kemudahan transfer teknologi kepada tim operasional Anda.</p>
-          <a class="btn btn-outline about-cert-link" href="#sertifikasi"><span class="ms" aria-hidden="true">verified</span>Lihat Sertifikasi</a>
+          <span class="chip eyebrow">Profil Perusahaan</span>
+          <h2 class="h-section" id="tentang-title">Mitra Konsultasi Industri Air Minum dalam Kemasan</h2>
+          <p class="lead">PT Tirta Wiyata Investama adalah perusahaan konsultan yang berfokus pada industri Air Minum Dalam Kemasan (AMDK). Nama kami memadukan Tirta (Air), Wiyata (Pendidikan), dan Investama (Investasi yang Tepat). Filosofi ini mendasari layanan kami dalam membangun pengetahuan, meningkatkan keterampilan, dan membantu mitra mengambil keputusan investasi untuk pertumbuhan bisnis yang berkelanjutan.</p>
+          <p class="about-note">Melalui jaringan mitra industri, kami mendampingi kebutuhan bisnis di seluruh rantai pasok AMDK, termasuk pengadaan barang dan jasa. Kami membantu Anda menilai pilihan sesuai kebutuhan pabrik; keputusan akhir tetap berada di tangan Anda.</p>
+
 
           <div class="vm-card">
             <span class="spec-k">Visi &amp; Misi</span>
             <div class="vm-item">
               <h3 class="h-title">Visi Perusahaan</h3>
-              <p class="body-sm">Menjadi penggerak utama pertumbuhan industri manufaktur air minum nasional yang mandiri, efisien, dan berstandar higienitas tertinggi.</p>
+              <p class="body-sm">Menjadi pemimpin industri konsultan Air Minum Dalam Kemasan yang menghadirkan solusi inovatif dan berkelanjutan bagi klien di seluruh dunia.</p>
             </div>
             <div class="vm-item">
               <h3 class="h-title">Misi Perusahaan</h3>
-              <p class="body-sm">Memberikan solusi rancang bangun pabrik yang komprehensif, menyediakan mesin cetak berdaya tahan tinggi, dan memastikan transfer teknologi yang tuntas kepada operator lokal.</p>
+              <p class="body-sm">Memberikan layanan konsultasi yang komprehensif untuk mencakup seluruh rantai pasokan industri Air Minum Dalam Kemasan.</p>
+              <p class="body-sm">Mengembangkan kemitraan strategis yang saling menguntungkan dengan pemangku kepentingan industri ini.</p>
+              <p class="body-sm">Mempromosikan kebijaksanaan, investasi yang tepat, dan teknologi terbaru untuk menciptakan masa depan yang lebih baik bagi industri Air Minum Dalam Kemasan.</p>
             </div>
           </div>
         </div>
@@ -949,8 +879,8 @@
         <div class="subsection">
           <header class="section-head">
             <span class="eyebrow">Layanan Utama A</span>
-            <h2 class="h-section" id="layanan-a-title">Konsultasi Pembangunan Pabrik</h2>
-            <p class="lead">Program pendampingan terstruktur khusus untuk pemilik lahan dan calon investor pabrik air minum yang membutuhkan panduan menyeluruh dari nol hingga pabrik beroperasi penuh.</p>
+            <h2 class="h-section" id="layanan-a-title">Konsultasi Perencanaan &amp; Pembangunan Pabrik</h2>
+            <p class="lead">Pendampingan untuk merencanakan atau mengembangkan pabrik AMDK. Kami membantu menyusun strategi bisnis, merencanakan fasilitas dan kebutuhan produksi, serta mendampingi legalitas, sertifikasi, dan kesiapan operasional sesuai tahap usaha Anda.</p>
           </header>
 
           <ol class="build-roadmap" aria-label="Tiga fase pembangunan pabrik">
@@ -964,9 +894,9 @@
                 <h3 class="h-card">Perencanaan &amp; Perizinan</h3>
               </div>
               <ul class="body-sm build-description">
-                <li>Konsultasi dan survei lahan, sumber air, akses logistik, serta infrastruktur.</li>
-                <li>Studi kelayakan dan tata letak ruang produksi higienis, termasuk jalur pipa.</li>
-                <li>Pendampingan standar sanitasi dan kebutuhan perizinan sebelum pembangunan.</li>
+                <li>Analisis pasar, identifikasi peluang, dan rekomendasi strategi untuk pertumbuhan serta ekspansi bisnis AMDK.</li>
+                <li>Konsultasi dan bantuan pengurusan perizinan usaha serta dokumen legal sesuai peraturan industri AMDK.</li>
+                <li>Bantuan pengurusan sertifikasi produk dan sistem manajemen sesuai standar industri dan peraturan yang berlaku.</li>
               </ul>
             </li>
             <li class="build-stage">
@@ -979,9 +909,8 @@
                 <h3 class="h-card">Konstruksi &amp; Instalasi</h3>
               </div>
               <ul class="body-sm build-description">
-                <li>Pemilihan dan pengadaan mesin cetak kemasan, pengolahan air, serta lini pengisian sesuai target produksi.</li>
-                <li>Pemasangan mesin dan perpipaan, uji coba, serta kalibrasi sensor.</li>
-                <li>Pelatihan operator agar tim Anda siap menjalankan produksi.</li>
+                <li>Konsultasi perencanaan dan optimalisasi fasilitas produksi AMDK, termasuk peralatan, teknologi, dan pengelolaan sumber daya.</li>
+                <li>Bantuan pengadaan bahan baku, peralatan, dan jasa, termasuk negosiasi harga serta ketentuan kontrak yang mendukung kebutuhan usaha.</li>
               </ul>
             </li>
             <li class="build-stage">
@@ -994,9 +923,9 @@
                 <h3 class="h-card">Siap Beroperasi</h3>
               </div>
               <ul class="body-sm build-description">
-                <li>Pabrik siap memasuki produksi komersial setelah instalasi dan uji coba selesai.</li>
-                <li>Tim operasional siap menjalankan mesin sesuai pelatihan.</li>
-                <li>Pendampingan teknis purnajual berkala untuk menjaga keandalan lini produksi.</li>
+                <li>Pelatihan dan peningkatan keterampilan manajemen untuk mendukung operasional yang efisien serta pengembangan strategi bisnis.</li>
+                <li>Dukungan logistik untuk pengepakan, pengiriman, dan transportasi produk AMDK.</li>
+                <li>Pengembangan strategi pemasaran, branding, dan promosi untuk menjangkau pasar yang lebih luas serta meningkatkan penjualan.</li>
               </ul>
             </li>
           </ol>
@@ -1009,367 +938,206 @@
                 <p class="body-sm">Hubungi admin untuk penawaran dan jadwal konsultasi awal.</p>
               </div>
             </div>
-            <a class="btn btn-navy" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20Konsultasi%20Pembangunan%20Pabrik%20AMDK." target="_blank" rel="noopener noreferrer">Konsultasi Sekarang</a>
+            <a class="btn btn-navy" href="https://wa.me/6282128612349?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20Konsultasi%20Perencanaan%20dan%20Pembangunan%20Pabrik%20AMDK." target="_blank" rel="noopener noreferrer">Konsultasi Sekarang</a>
           </div>
         </div>
 
-        <!-- B: Supplier perlengkapan pabrik -->
+        <!-- B: Supply chain -->
         <div class="subsection" id="layanan-perlengkapan">
           <header class="section-head">
             <span class="eyebrow">Layanan Utama B</span>
-            <h2 class="h-section">Supplier Perlengkapan Pabrik</h2>
-            <p class="lead">Komponen mekanikal, pengolahan air, dan pendukung higienis berspesifikasi industri food-grade untuk keandalan lini produksi air minum harian Anda.</p>
+            <h2 class="h-section">Supply Chain AMDK</h2>
+            <p class="h-title">Pengadaan Mesin, Barang &amp; Jasa</p>
+            <p class="lead">Kami menghubungkan kebutuhan pabrik Anda dengan supplier mesin dan mitra jasa, termasuk survei sumber air, pengeboran, serta pendampingan perizinan. Kami bantu membahas spesifikasi dan pengadaan; keputusan tetap di tangan Anda.</p>
           </header>
 
           <div class="equip-grid">
             <article class="equip-card">
-              <div class="equip-media"><img src="assets/img/perlengkapan-water-treatment-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Skid reverse osmosis dan ultrafiltrasi stainless steel dengan pressure vessel dan panel kontrol"></div>
-              <span class="eyebrow">UF · RO · Ozon</span>
-              <h3 class="h-card">Sistem Pengolahan Air</h3>
-              <p class="body-sm">Multi-media filtration, Ultrafiltrasi (UF), Reverse Osmosis (RO) berskala industri, serta generator ozonisasi higienis.</p>
-              <a class="equip-cta" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20tanya%20ketersediaan%20Sistem%20Pengolahan%20Air." target="_blank" rel="noopener noreferrer">Tanya Ketersediaan <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
-            </article>
-            <article class="equip-card">
-              <div class="equip-media"><img src="assets/img/perlengkapan-pompa-perpipaan-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Pompa sentrifugal sanitary dan perpipaan stainless steel food-grade dengan sambungan tri-clamp"></div>
-              <span class="eyebrow">SS304 · SS316 · Tri-clamp</span>
-              <h3 class="h-card">Pompa dan Perpipaan</h3>
-              <p class="body-sm">Sanitary centrifugal pumps, perpipaan stainless steel food-grade SS304 &amp; SS316, butterfly valves, dan koneksi tri-clamp.</p>
-              <a class="equip-cta" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20tanya%20ketersediaan%20Pompa%20dan%20Perpipaan%20Sanitary." target="_blank" rel="noopener noreferrer">Tanya Ketersediaan <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
-            </article>
-            <article class="equip-card">
-              <div class="equip-media"><img src="assets/img/perlengkapan-tangki-800.webp" width="800" height="334" loading="lazy" decoding="async" alt="Dua tangki stainless steel untuk raw water dan treated water di ruang pengolahan air"></div>
-              <span class="eyebrow">CIP · Level Otomatis</span>
-              <h3 class="h-card">Tangki dan Penampungan</h3>
-              <p class="body-sm">Tangki penampungan raw water &amp; treated water stainless steel terisolasi dengan sanitary manhole, CIP ball, dan indikator level otomatis.</p>
-              <a class="equip-cta" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20tanya%20ketersediaan%20Tangki%20dan%20Penampungan%20Air." target="_blank" rel="noopener noreferrer">Tanya Ketersediaan <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
-            </article>
-            <article class="equip-card">
               <div class="equip-media"><img src="assets/img/perlengkapan-filling-capping-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Mesin monoblok pencuci, pengisi, dan penutup botol pada lini konveyor"></div>
-              <span class="eyebrow">Washing · Filling · Capping</span>
-              <h3 class="h-card">Mesin Pengisi dan Penutup</h3>
-              <p class="body-sm">Automatic washing, filling, and capping system untuk galon 19 L dan botol PET dengan proteksi ruang ozon anti-kontaminasi.</p>
-              <a class="equip-cta" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20tanya%20ketersediaan%20Mesin%20Pengisi%20dan%20Penutup." target="_blank" rel="noopener noreferrer">Tanya Ketersediaan <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
+              <span class="eyebrow">Supply Chain Barang</span>
+              <h3 class="h-card" id="pengadaan-mesin">Pengadaan Mesin &amp; Peralatan</h3>
+              <ul class="body-sm equip-scope">
+                <li>Mesin filling untuk kemasan galon, botol, dan cup sesuai kapasitas produksi.</li>
+                <li>Peralatan water treatment: filter, karbon aktif, dan sistem ozon.</li>
+                <li>Pemilihan supplier sesuai spesifikasi mesin dan kebutuhan pengolahan air pabrik Anda.</li>
+              </ul>
+              <a class="equip-cta" href="https://wa.me/6282128612349?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20pengadaan%20mesin%20filling%20dan%20peralatan%20water%20treatment." target="_blank" rel="noopener noreferrer">Diskusikan Pengadaan Barang <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
             </article>
             <article class="equip-card">
-              <div class="equip-media"><img src="assets/img/perlengkapan-lab-qc-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Analis laboratorium menguji sampel air di laminar air flow dengan TDS meter dan pH meter"></div>
-              <span class="eyebrow">TDS · pH · Mikrobiologi</span>
-              <h3 class="h-card">Peralatan Laboratorium &amp; QC</h3>
-              <p class="body-sm">TDS meter presisi, turbidimeter terkalibrasi, inkubator mikroba, pH meter industri, serta instrumen uji rutin higienitas laboratorium pabrik.</p>
-              <a class="equip-cta" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20tanya%20ketersediaan%20Peralatan%20Laboratorium%20QC." target="_blank" rel="noopener noreferrer">Tanya Ketersediaan <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
+              <div class="equip-media"><img src="assets/img/portfolio-konsultasi-perizinan-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Rapat audit kesiapan pabrik dengan dokumen ISO dan grafik kinerja"></div>
+              <span class="eyebrow">Supply Chain Jasa</span>
+              <h3 class="h-card">Jasa Sumber Air &amp; Perizinan</h3>
+              <ul class="body-sm equip-scope">
+                <li>Survei geolistrik untuk menilai potensi air tanah dan merencanakan titik serta kedalaman pengeboran.</li>
+                <li>Koordinasi pengeboran sumur melalui mitra sesuai kajian teknis dan perizinan.</li>
+                <li>Pendampingan dokumen dan pengajuan Izin Pengusahaan Air Tanah (SIPA) melalui OSS sesuai kewenangan instansi.</li>
+              </ul>
+              <a class="equip-cta" href="https://wa.me/6282128612349?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20jasa%20geolistrik%2C%20pengeboran%2C%20dan%20pendampingan%20perizinan%20air%20tanah%20SIPA." target="_blank" rel="noopener noreferrer">Konsultasikan Kebutuhan Jasa <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
             </article>
             <article class="equip-card equip-card--contact">
               <div class="equip-media"><img src="assets/img/tentang-engineer-plc-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Teknisi memeriksa panel kontrol mesin di pabrik"></div>
-              <span class="eyebrow">Kebutuhan Mesin &amp; Perlengkapan</span>
-              <h3 class="h-card">Butuh Mesin Lain?</h3>
-              <p class="body-sm">Mesin yang Anda cari belum tercantum? Hubungi kami untuk mendiskusikan jenis mesin, kapasitas, dan kebutuhan pabrik Anda.</p>
-              <a class="equip-cta" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20menanyakan%20mesin%20atau%20perlengkapan%20lain%20untuk%20kebutuhan%20pabrik%20saya." target="_blank" rel="noopener noreferrer">Hubungi Kami <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
+              <span class="eyebrow">Kebutuhan Pengadaan Lain</span>
+              <h3 class="h-card">Ada Kebutuhan Lain?</h3>
+              <p class="body-sm">Ceritakan kebutuhan barang atau jasa untuk pabrik Anda. Kami bantu menelusuri pilihan mitra dan mendiskusikan lingkup pekerjaan, spesifikasi, serta proses pengadaannya.</p>
+              <a class="equip-cta" href="https://wa.me/6282128612349?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20kebutuhan%20pengadaan%20barang%20atau%20jasa%20untuk%20pabrik%20AMDK." target="_blank" rel="noopener noreferrer">Konsultasikan Kebutuhan Anda <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg></a>
             </article>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ======================= PRODUK ======================= -->
-    <section class="section section--tint" id="produk" aria-labelledby="produk-title">
-      <div class="container">
-        <header class="section-head section-head--split">
-          <div>
-            <span class="chip eyebrow">Katalog Mesin Blow Moulding</span>
-            <h2 class="h-section" id="produk-title">Mesin Cetak Galon &amp; Botol Presisi</h2>
-            <p class="lead">Unit mesin pembuat wadah (blow moulding machine) berakurasi tinggi. <strong style="color:var(--navy-ink)">Catatan teknis:</strong> seri ini berfokus pada pencetakan botol/galon dari preform, terpisah dari sistem pengisian (filling &amp; capping).</p>
-          </div>
-          <div class="segmented" role="group" aria-label="Filter kategori mesin" data-filter-target="machine-grid">
-            <button type="button" data-filter="all" aria-pressed="true">Semua</button>
-            <button type="button" data-filter="galon" aria-pressed="false">Galon</button>
-            <button type="button" data-filter="botol" aria-pressed="false">Botol</button>
-          </div>
-        </header>
-
-        <div class="machine-grid" id="machine-grid">
-          <article class="machine-card" data-category="galon">
-            <div class="machine-media">
-              <img src="assets/img/mesin-galon-19l-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Mesin blow moulding galon 19 liter dengan terowongan pemanas inframerah">
-              <span class="badge">Galon</span>
-            </div>
-            <div class="machine-body">
-              <div class="machine-meta">
-                <span class="eyebrow">Volume: 19 Liter</span>
-                <span class="cap">120 – 240 BPH</span>
-              </div>
-              <h3 class="h-card">TWI-G19 Mesin Cetak Galon 19 L</h3>
-              <p class="body-sm">Mesin blow moulding semi-otomatis bertekanan tinggi untuk galon polikarbonat (PC) dan PET volume standar 19 liter.</p>
-              <dl class="spec-mini">
-                <div><dt>Daya Listrik</dt><dd>32 kW (Peak)</dd></div>
-                <div><dt>Tekanan Tiup</dt><dd>2,8 – 3,2 MPa</dd></div>
-              </dl>
-            </div>
-            <div class="machine-actions">
-              <button class="btn btn-outline" type="button" data-spec="TWI-G19"><span class="ms" aria-hidden="true">visibility</span>Lihat Spesifikasi</button>
-              <a class="btn btn-wa" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20minta%20penawaran%20harga%20untuk%20TWI-G19%20Mesin%20Cetak%20Galon%2019%20L." target="_blank" rel="noopener noreferrer"><svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>Minta Penawaran</a>
-            </div>
-          </article>
-
-          <article class="machine-card" data-category="galon">
-            <div class="machine-media">
-              <img src="assets/img/mesin-galon-5l-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Mesin cetak galon 5 liter dengan monitor PLC dan konveyor hasil produksi">
-              <span class="badge">Galon</span>
-            </div>
-            <div class="machine-body">
-              <div class="machine-meta">
-                <span class="eyebrow">Volume: 5 Liter</span>
-                <span class="cap">400 – 600 BPH</span>
-              </div>
-              <h3 class="h-card">TWI-G5 Mesin Cetak Galon 5 L</h3>
-              <p class="body-sm">Unit cetak galon mini 5 liter, cocok untuk kemasan air minum sekali pakai dan produk air keluarga berukuran kompak.</p>
-              <dl class="spec-mini">
-                <div><dt>Daya Listrik</dt><dd>24 kW</dd></div>
-                <div><dt>Jumlah Cavity</dt><dd>2 Cavity</dd></div>
-              </dl>
-            </div>
-            <div class="machine-actions">
-              <button class="btn btn-outline" type="button" data-spec="TWI-G5"><span class="ms" aria-hidden="true">visibility</span>Lihat Spesifikasi</button>
-              <a class="btn btn-wa" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20minta%20penawaran%20harga%20untuk%20TWI-G5%20Mesin%20Cetak%20Galon%205%20L." target="_blank" rel="noopener noreferrer"><svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>Minta Penawaran</a>
-            </div>
-          </article>
-
-          <article class="machine-card" data-category="botol">
-            <div class="machine-media">
-              <img src="assets/img/mesin-botol-600ml-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Mesin stretch blow moulding linear otomatis untuk botol PET 330 ml dan 600 ml">
-              <span class="badge badge--cyan">Botol</span>
-            </div>
-            <div class="machine-body">
-              <div class="machine-meta">
-                <span class="eyebrow">Volume: 330 ml &amp; 600 ml</span>
-                <span class="cap">2.000 – 4.500 BPH</span>
-              </div>
-              <h3 class="h-card">TWI-B600 Mesin Cetak Botol 330–600 ml</h3>
-              <p class="body-sm">Pencetakan linear otomatis untuk botol PET personal 330 ml dan 600 ml dengan sistem penghemat konsumsi udara bertekanan.</p>
-              <dl class="spec-mini">
-                <div><dt>Daya Listrik</dt><dd>38 kW</dd></div>
-                <div><dt>Jumlah Cavity</dt><dd>4 Cavity</dd></div>
-              </dl>
-            </div>
-            <div class="machine-actions">
-              <button class="btn btn-outline" type="button" data-spec="TWI-B600"><span class="ms" aria-hidden="true">visibility</span>Lihat Spesifikasi</button>
-              <a class="btn btn-wa" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20minta%20penawaran%20harga%20untuk%20TWI-B600%20Mesin%20Cetak%20Botol%20330-600%20ml." target="_blank" rel="noopener noreferrer"><svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>Minta Penawaran</a>
-            </div>
-          </article>
-
-          <article class="machine-card" data-category="botol">
-            <div class="machine-media">
-              <img src="assets/img/mesin-botol-1500ml-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Mesin blow moulding botol PET 1.500 ml dengan rangka clamp baja dan unit chiller">
-              <span class="badge badge--cyan">Botol</span>
-            </div>
-            <div class="machine-body">
-              <div class="machine-meta">
-                <span class="eyebrow">Volume: 1.500 ml</span>
-                <span class="cap">1.500 – 3.000 BPH</span>
-              </div>
-              <h3 class="h-card">TWI-B1500 Mesin Cetak Botol 1.500 ml</h3>
-              <p class="body-sm">Mesin tiup botol PET format besar 1.500 ml dengan pemanasan inframerah merata guna kestabilan ketebalan dinding botol.</p>
-              <dl class="spec-mini">
-                <div><dt>Daya Listrik</dt><dd>42 kW</dd></div>
-                <div><dt>Jumlah Cavity</dt><dd>2 – 4 Cavity</dd></div>
-              </dl>
-            </div>
-            <div class="machine-actions">
-              <button class="btn btn-outline" type="button" data-spec="TWI-B1500"><span class="ms" aria-hidden="true">visibility</span>Lihat Spesifikasi</button>
-              <a class="btn btn-wa" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20minta%20penawaran%20harga%20untuk%20TWI-B1500%20Mesin%20Cetak%20Botol%201.500%20ml." target="_blank" rel="noopener noreferrer"><svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>Minta Penawaran</a>
-            </div>
-          </article>
-        </div>
-        <p class="sr-only" role="status" aria-live="polite" data-filter-status="machine-grid"></p>
-      </div>
-    </section>
-
-    <!-- ======================= CUSTOM ORDER ======================= -->
-    <section class="section" id="custom" aria-labelledby="custom-title">
-      <div class="container custom-grid">
-        <div class="custom-copy">
-          <span class="eyebrow">Custom Moulding &amp; Mold Engineering</span>
-          <h2 class="h-section" id="custom-title">Butuh Bentuk atau Ukuran Khusus?</h2>
-          <p class="lead">Kami menyediakan layanan rancang cetakan (mold die) kustom untuk botol maupun galon dengan siluet identitas unik merek Anda. Dari botol berprofil ergonomis, galon bertekstur struktural, hingga ukuran volume di luar spesifikasi standar.</p>
-
-          <ol class="mini-steps" aria-label="Alur pengajuan custom order">
-            <li>
-              <span class="mini-num" aria-hidden="true">1</span>
-              <div>
-                <h3 class="h-title">Sampaikan jenis, volume, bentuk, dan jumlah</h3>
-                <p class="body-sm">Jelaskan target bentuk botol/galon, gramatur preform, serta estimasi volume harian.</p>
-              </div>
-            </li>
-            <li>
-              <span class="mini-num" aria-hidden="true">2</span>
-              <div>
-                <h3 class="h-title">Diskusikan kebutuhan dan kelayakan teknis</h3>
-                <p class="body-sm">Tim teknis kami menghitung toleransi mekanikal cetakan, waktu siklus tiup, dan efisiensi material.</p>
-              </div>
-            </li>
-            <li>
-              <span class="mini-num" aria-hidden="true">3</span>
-              <div>
-                <h3 class="h-title">Terima penawaran sesuai hasil konsultasi</h3>
-                <p class="body-sm">Estimasi biaya fabrikasi mold baja/aluminium duralium dan estimasi jadwal pengiriman.</p>
-              </div>
-            </li>
-          </ol>
-
-          <div class="note">
-            <div class="note-head"><span class="ms" aria-hidden="true">info</span><span class="eyebrow">Protokol Diskusi Desain</span></div>
-            <p class="body-sm">Desain referensi dan sketsa teknis dikirimkan langsung melalui WhatsApp setelah diskusi dimulai, tanpa form upload.</p>
-          </div>
-
-          <a class="btn btn-wa btn-lg" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20mengajukan%20Custom%20Order%20cetakan%20botol%2Fgalon." target="_blank" rel="noopener noreferrer">
-            <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
-            Hubungi Kami
-          </a>
-        </div>
-
-        <div class="cad-panel">
-          <div class="cad-head">
-            <div class="cad-title"><span class="ms" aria-hidden="true">view_in_ar</span><span class="spec-k">CAD Mold Wireframe Simulation</span></div>
-            <span class="cad-chip">CNC Precision ±0,01 mm</span>
-          </div>
-          <figure class="cad-view">
-            <img src="assets/img/custom-cad-mold-800.webp"
-                 srcset="assets/img/custom-cad-mold-800.webp 800w, assets/img/custom-cad-mold-1400.webp 1140w"
-                 sizes="(min-width: 1024px) 560px, 100vw"
-                 width="800" height="407" loading="lazy" decoding="async"
-                 alt="Gambar CAD wireframe cetakan botol baja dua cavity dengan keterangan dimensi">
-            <figcaption class="cad-readout">
-              <span><b>Tipe Baja Mold:</b> Alum 7075-T6 / Steel P20</span>
-              <span><b>Pendinginan:</b> Baffle Water Circuit</span>
-            </figcaption>
-          </figure>
-          <dl class="cad-stats">
-            <div><dt>Volume Fleksibel</dt><dd>100 ml – 20 L</dd></div>
-            <div><dt>Format Mold</dt><dd>1 – 8 Cavity</dd></div>
-            <div><dt>Penyelesaian</dt><dd>Cermin / Satin</dd></div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================= PORTFOLIO ======================= -->
-    <section class="section section--tint" id="portfolio" aria-labelledby="portfolio-title">
-      <div class="container">
-        <header class="section-head section-head--split">
-          <div>
-            <span class="eyebrow">Rekam Jejak Lapangan</span>
-            <h2 class="h-section" id="portfolio-title">Portfolio Rekayasa &amp; Pengadaan</h2>
-            <p class="lead">Dokumentasi proyek implementasi lini pabrik, konsultasi rancang bangun, dan perakitan mesin di berbagai wilayah mitra.</p>
-          </div>
-          <div class="segmented" role="group" aria-label="Filter jenis proyek" data-filter-target="project-grid">
-            <button type="button" data-filter="all" aria-pressed="true">Semua</button>
-            <button type="button" data-filter="konsultasi" aria-pressed="false">Konsultasi</button>
-            <button type="button" data-filter="pabrik" aria-pressed="false">Pabrik</button>
-            <button type="button" data-filter="mesin" aria-pressed="false">Mesin</button>
-          </div>
-        </header>
-
-        <div class="project-grid" id="project-grid">
-          <article class="project-card" data-category="pabrik">
-            <div class="project-media">
-              <img src="assets/img/portfolio-pabrik-galon-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Ruang pengisian galon 19 liter dengan konveyor otomatis dan operator berpakaian higienis">
-              <div class="project-tags"><span class="badge">Pabrik</span><span class="year">2023</span></div>
-            </div>
-            <div class="project-body">
-              <span class="eyebrow">Kota Contoh A</span>
-              <h3 class="h-card">Pabrik Air Galon Skala Menengah</h3>
-              <p class="body-sm">Instalasi turnkey lengkap dari unit filter RO 4.000 GPD hingga jalur pencucian dan pengisian galon 19 L kapasitas 300 BPH.</p>
-            </div>
-          </article>
-          <article class="project-card" data-category="konsultasi">
-            <div class="project-media">
-              <img src="assets/img/portfolio-konsultasi-botol-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Meja kerja dengan gambar denah tata letak pabrik dan model digital di monitor">
-              <div class="project-tags"><span class="badge badge--cyan">Konsultasi</span><span class="year">2022</span></div>
-            </div>
-            <div class="project-body">
-              <span class="eyebrow">Kota Contoh B</span>
-              <h3 class="h-card">Konsultasi Pabrik Air Botol</h3>
-              <p class="body-sm">Penyusunan arsitektur ruang bersih kelas sanitasi, zoning air limbah, dan penataan alur jalur blow moulding menuju cleanroom.</p>
-            </div>
-          </article>
-          <article class="project-card" data-category="mesin">
-            <div class="project-media">
-              <img src="assets/img/portfolio-mesin-galon-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Instalasi dan uji mesin blow moulding galon 19 liter dengan galon biru di konveyor">
-              <div class="project-tags"><span class="badge badge--blue">Mesin</span><span class="year">2024</span></div>
-            </div>
-            <div class="project-body">
-              <span class="eyebrow">Kota Contoh C</span>
-              <h3 class="h-card">Pengadaan Mesin Cetak Galon 19 L</h3>
-              <p class="body-sm">Pengiriman unit mesin tiup galon tipe TWI-G19 serta kompresor udara bertekanan tinggi 3,0 MPa dan chiller penstabil suhu mold.</p>
-            </div>
-          </article>
-          <article class="project-card" data-category="pabrik">
-            <div class="project-media">
-              <img src="assets/img/portfolio-pabrik-gelas-botol-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Lantai pabrik air kemasan dengan beberapa lini pengisian dan pengemasan otomatis">
-              <div class="project-tags"><span class="badge">Pabrik</span><span class="year">2021</span></div>
-            </div>
-            <div class="project-body">
-              <span class="eyebrow">Kota Contoh D</span>
-              <h3 class="h-card">Pabrik Air Kemasan Gelas dan Botol</h3>
-              <p class="body-sm">Integrasi dua lini sekaligus: rotary cup sealer 220 ml (8 line) dan sistem pengisian botol PET 600 ml kecepatan 3.000 BPH.</p>
-            </div>
-          </article>
-          <article class="project-card" data-category="konsultasi">
-            <div class="project-media">
-              <img src="assets/img/portfolio-konsultasi-perizinan-800.webp" width="800" height="486" loading="lazy" decoding="async" alt="Rapat audit kesiapan pabrik dengan dokumen ISO dan grafik kinerja">
-              <div class="project-tags"><span class="badge badge--cyan">Konsultasi</span><span class="year">2023</span></div>
-            </div>
-            <div class="project-body">
-              <span class="eyebrow">Kota Contoh E</span>
-              <h3 class="h-card">Konsultasi Perizinan Pabrik Air</h3>
-              <p class="body-sm">Audit kesiapan fasilitas laboratorium uji, sterilisasi ruang produksi, dan panduan pemenuhan parameter teknis pabrik air.</p>
-            </div>
-          </article>
-          <article class="project-card" data-category="mesin">
-            <div class="project-media">
-              <img src="assets/img/portfolio-botol-custom-800.webp" width="800" height="509" loading="lazy" decoding="async" alt="Sampel botol air mineral bentuk khusus di samping cetakan logam CNC dua cavity">
-              <div class="project-tags"><span class="badge badge--blue">Mesin</span><span class="year">2024</span></div>
-            </div>
-            <div class="project-body">
-              <span class="eyebrow">Kota Contoh F</span>
-              <h3 class="h-card">Mesin Botol Custom Bentuk Khusus</h3>
-              <p class="body-sm">Penyediaan mesin tiup 4-cavity dengan set mold custom botol heksagonal anti-slip 500 ml berkecepatan 3.600 botol per jam.</p>
-            </div>
-          </article>
-        </div>
-        <p class="sr-only" role="status" aria-live="polite" data-filter-status="project-grid"></p>
-      </div>
-    </section>
-
-    <section class="section" id="sertifikasi" aria-labelledby="sertifikasi-title">
+    <!-- ======================= LEGALITAS ======================= -->
+    <section class="section section--tint" id="legalitas" aria-labelledby="legalitas-title">
       <div class="container">
         <header class="section-head">
-          <span class="eyebrow">Mutu, Keamanan &amp; Keselamatan</span>
-          <h2 class="h-section" id="sertifikasi-title">Sertifikasi &amp; Standar</h2>
-          <p class="lead">Sistem manajemen yang relevan untuk rekayasa industri dan operasional pabrik air minum.</p>
+          <span class="chip eyebrow">Legalitas &amp; Sertifikasi</span>
+          <h2 class="h-section" id="legalitas-title">Pendampingan Legalitas &amp; Sertifikasi AMDK</h2>
+          <p class="lead">Siapkan persyaratan produk, sistem manajemen, dan pemanfaatan sumber air bersama TWI. Kami membantu memetakan kebutuhan, menyiapkan dokumen, serta mendampingi proses pengajuan dan kesiapan pemeriksaan.</p>
         </header>
-        <div class="cert-grid">
-          <article class="cert-card">
-            <div class="cert-standard" aria-label="ISO 9001"><span>ISO</span><strong>9001</strong></div>
-            <h3 class="h-card">Manajemen Mutu</h3>
-            <p class="body-sm">Pengelolaan proses, konsistensi mutu, serta perbaikan berkelanjutan dalam penyediaan produk dan layanan.</p>
-            <span class="cert-scope">Sistem manajemen organisasi</span>
-            <button class="btn btn-outline cert-link" type="button" disabled title="Link sertifikat belum tersedia" aria-label="Lihat Sertifikat ISO 9001, link belum tersedia"><span class="ms" aria-hidden="true">visibility</span>Lihat Sertifikat</button>
+        <div class="cert-grid legal-grid">
+          <article class="cert-card legal-card" id="legalitas-sni">
+            <div class="legal-code">SNI</div>
+            <h3 class="h-card">Standar Mutu Produk</h3>
+            <p class="body-sm">Pendampingan pemenuhan Standar Nasional Indonesia sesuai jenis produk AMDK dan skema sertifikasi yang berlaku.</p>
+            <ul class="body-sm legal-scope">
+              <li>Penyiapan dokumen mutu dan kebutuhan pengujian produk.</li>
+              <li>Pendampingan kesiapan audit dan proses sertifikasi melalui LSPro.</li>
+            </ul>
           </article>
-          <article class="cert-card">
-            <div class="cert-standard" aria-label="ISO 22000"><span>ISO</span><strong>22000</strong></div>
-            <h3 class="h-card">Keamanan Pangan</h3>
-            <p class="body-sm">Identifikasi dan pengendalian bahaya keamanan pangan di sepanjang rantai produksi, termasuk industri air minum.</p>
-            <span class="cert-scope">Sistem manajemen keamanan pangan</span>
-            <button class="btn btn-outline cert-link" type="button" disabled title="Link sertifikat belum tersedia" aria-label="Lihat Sertifikat ISO 22000, link belum tersedia"><span class="ms" aria-hidden="true">visibility</span>Lihat Sertifikat</button>
+          <article class="cert-card legal-card" id="legalitas-halal">
+            <div class="legal-code">Halal</div>
+            <h3 class="h-card">Jaminan Produk Halal</h3>
+            <p class="body-sm">Pendampingan sertifikasi halal melalui kesiapan bahan, proses produksi, dan Sistem Jaminan Produk Halal (SJPH).</p>
+            <ul class="body-sm legal-scope">
+              <li>Penyiapan data bahan, alur produksi, dan dokumen SJPH.</li>
+              <li>Pendampingan pengajuan melalui SIHALAL dan persiapan pemeriksaan.</li>
+            </ul>
           </article>
-          <article class="cert-card">
-            <div class="cert-standard" aria-label="ISO 45001"><span>ISO</span><strong>45001</strong></div>
-            <h3 class="h-card">Keselamatan &amp; Kesehatan Kerja</h3>
-            <p class="body-sm">Pengelolaan risiko keselamatan dan kesehatan kerja untuk mendukung lingkungan kerja yang lebih aman.</p>
-            <span class="cert-scope">Sistem manajemen K3</span>
-            <button class="btn btn-outline cert-link" type="button" disabled title="Link sertifikat belum tersedia" aria-label="Lihat Sertifikat ISO 45001, link belum tersedia"><span class="ms" aria-hidden="true">visibility</span>Lihat Sertifikat</button>
+          <article class="cert-card legal-card" id="legalitas-bpom">
+            <div class="legal-code">BPOM</div>
+            <h3 class="h-card">Izin Edar Produk AMDK</h3>
+            <p class="body-sm">Pendampingan registrasi pangan olahan untuk memperoleh izin edar BPOM bagi produk AMDK yang diproduksi di Indonesia.</p>
+            <ul class="body-sm legal-scope">
+              <li>Penyiapan data produk, rancangan label, dan dokumen persyaratan.</li>
+              <li>Pendampingan kesiapan sarana produksi dan pengajuan izin edar BPOM MD.</li>
+            </ul>
+          </article>
+          <article class="cert-card legal-card" id="legalitas-iso-9001">
+            <div class="legal-code">ISO 9001</div>
+            <h3 class="h-card">Sistem Manajemen Mutu</h3>
+            <p class="body-sm">Pendampingan penerapan sistem manajemen mutu untuk menjaga konsistensi proses, memenuhi kebutuhan pelanggan, dan mendorong perbaikan berkelanjutan.</p>
+            <ul class="body-sm legal-scope">
+              <li>Penyusunan prosedur kerja, sasaran mutu, dan pengendalian dokumen.</li>
+              <li>Pendampingan audit internal dan kesiapan audit lembaga sertifikasi.</li>
+            </ul>
+          </article>
+          <article class="cert-card legal-card" id="legalitas-sipa">
+            <div class="legal-code">SIPA</div>
+            <h3 class="h-card">Izin Pengusahaan Air Tanah</h3>
+            <p class="body-sm">Pendampingan perizinan penggunaan air tanah untuk kegiatan usaha AMDK, sesuai kondisi lokasi dan kewenangan instansi.</p>
+            <ul class="body-sm legal-scope">
+              <li>Penyiapan data lokasi, kebutuhan air, dan dokumen teknis sumur.</li>
+              <li>Pendampingan permohonan melalui OSS dan pemenuhan persyaratan instansi terkait.</li>
+            </ul>
+          </article>
+
+          <article class="cert-card legal-card legal-card--consult">
+            <div class="icon-tile" aria-hidden="true"><span class="ms">fact_check</span></div>
+            <span class="eyebrow">Kebutuhan Pabrik Anda</span>
+            <h3 class="h-card">Mulai dari Kebutuhan Usaha Anda</h3>
+            <p class="body-sm">Sedang merencanakan pabrik, menyiapkan produk baru, atau melengkapi perizinan? Ceritakan kondisi usaha Anda agar kami dapat membantu menentukan dokumen dan langkah yang perlu disiapkan.</p>
+            <a class="btn btn-wa" href="https://wa.me/6282128612349?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20pendampingan%20legalitas%20dan%20sertifikasi%20AMDK%20%28SNI%2C%20Halal%2C%20BPOM%2C%20ISO%209001%2C%20atau%20SIPA%29." target="_blank" rel="noopener noreferrer"><svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>Konsultasikan Legalitas AMDK</a>
           </article>
         </div>
-        <p class="cert-note body-sm"><span class="ms" aria-hidden="true">info</span><span>Konten contoh untuk pratinjau desain. Daftar ini bukan pernyataan kepemilikan sertifikasi perusahaan; dokumen asli belum ditampilkan.</span></p>
+
+      </div>
+    </section>
+
+    <!-- ======================= PENCAPAIAN MITRA ======================= -->
+    <section class="section section--tint partner-section" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <header class="partner-heading"><div><span class="eyebrow">Cerita Pertumbuhan Mitra</span><h2 class="h-section" id="portfolio-title">Pencapaian Mitra Bisnis Kami</h2></div></header>
+        <div class="partner-carousel" data-partner-carousel role="region" aria-roledescription="carousel" aria-labelledby="portfolio-title">
+          <div class="partner-stage">
+            <article class="partner-slide" data-partner-slide role="group" aria-roledescription="slide" aria-label="1 / 3">
+              <figure class="partner-photo"><img src="assets/img/portfolio-pabrik-galon-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Ilustrasi sementara untuk cerita PT Viura Indo Tirta"><figcaption>Foto ilustrasi sementara</figcaption></figure>
+              <div class="partner-story"><img class="partner-brand" src="assets/img/clients/viura-corporate.webp" width="150" height="60" loading="lazy" decoding="async" alt="PT Viura Indo Tirta"><span class="eyebrow">Pengembangan Fasilitas &amp; Ekspansi Pasar</span><h3>PT Viura Indo Tirta</h3><p class="body-sm partner-intro">Dukungan untuk mengembangkan fasilitas produksi dan memperluas pasar AMDK.</p>
+                <ul class="body-sm partner-scope"><li>Perencanaan pengembangan fasilitas produksi.</li><li>Pendampingan strategi untuk menjangkau pasar yang lebih luas.</li></ul>
+
+              </div>
+            </article>
+            <article class="partner-slide" data-partner-slide role="group" aria-roledescription="slide" aria-label="2 / 3" hidden>
+              <figure class="partner-photo"><img src="assets/img/portfolio-pabrik-gelas-botol-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Ilustrasi sementara untuk cerita PT Sun Water International"><figcaption>Foto ilustrasi sementara</figcaption></figure>
+              <div class="partner-story"><img class="partner-brand" src="assets/img/clients/sun-water-international.webp" width="150" height="60" loading="lazy" decoding="async" alt="PT Sun Water International"><span class="eyebrow">Sertifikasi Produk &amp; Sistem Manajemen</span><h3>PT Sun Water International</h3><p class="body-sm partner-intro">Pendampingan pengurusan sertifikasi untuk mendukung kualitas produk dan kepercayaan konsumen.</p>
+                <ul class="body-sm partner-scope"><li>Bantuan dalam proses sertifikasi produk.</li><li>Pendampingan pengurusan sertifikasi sistem manajemen.</li></ul>
+
+              </div>
+            </article>
+            <article class="partner-slide" data-partner-slide role="group" aria-roledescription="slide" aria-label="3 / 3" hidden>
+              <figure class="partner-photo"><img src="assets/img/portfolio-konsultasi-botol-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Ilustrasi sementara untuk cerita M-QUA"><figcaption>Foto ilustrasi sementara</figcaption></figure>
+              <div class="partner-story"><img class="partner-brand" src="assets/img/clients/m-qua.webp" width="150" height="60" loading="lazy" decoding="async" alt="M-QUA"><span class="eyebrow">Strategi Pemasaran AMDK</span><h3>M-QUA</h3><p class="body-sm partner-intro">Konsultasi strategi pemasaran untuk mendukung pertumbuhan penjualan produk AMDK.</p>
+                <ul class="body-sm partner-scope"><li>Pengembangan strategi pemasaran sesuai kebutuhan bisnis.</li><li>Pendampingan arah pemasaran untuk mendukung penjualan.</li></ul>
+
+              </div>
+            </article>
+          </div>
+          <div class="partner-controls"><div class="partner-buttons">
+            <button class="partner-button" type="button" data-partner-prev aria-label="Cerita sebelumnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5m7-7-7 7 7 7"/></svg></button>
+
+            <button class="partner-button" type="button" data-partner-next aria-label="Cerita berikutnya"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
+          </div></div>
+          <p class="sr-only" data-partner-announcement aria-live="polite" aria-atomic="true"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section client-section" id="klien" aria-labelledby="klien-title">
+      <div class="container"><header class="section-head"><span class="eyebrow">Jaringan Kemitraan</span><h2 class="h-section" id="klien-title">Klien Kami</h2></header>
+        <div class="client-marquee" tabindex="0" role="region" aria-labelledby="klien-title">
+          <div class="client-track">
+            <div class="client-group" role="list">
+          <div class="client-logo" role="listitem"><img src="assets/img/clients/pertamina-energy-terminal.webp" width="200" height="100" loading="eager" decoding="async" alt="Pertamina Energy Terminal"></div>
+          <div class="client-logo" role="listitem"><img src="assets/img/clients/2tang.webp" width="200" height="100" loading="eager" decoding="async" alt="2Tang"></div>
+          <div class="client-logo" role="listitem"><img src="assets/img/clients/masjid-istiqlal.webp" width="200" height="100" loading="eager" decoding="async" alt="Masjid Istiqlal"></div>
+          <div class="client-logo" role="listitem"><img src="assets/img/clients/tds-nol.webp" width="200" height="100" loading="eager" decoding="async" alt="TDS NOL"></div>
+          <div class="client-logo" role="listitem"><img src="assets/img/clients/viura.webp" width="200" height="100" loading="eager" decoding="async" alt="Viura"></div>
+          <div class="client-logo" role="listitem"><img src="assets/img/clients/qoha.webp" width="200" height="100" loading="eager" decoding="async" alt="QOHA"></div>
+          <div class="client-logo" role="listitem"><img src="assets/img/clients/tamansari-dian-persada.webp" width="200" height="100" loading="eager" decoding="async" alt="Tamansari Dian Persada"></div>
+          <div class="client-logo" role="listitem"><img src="assets/img/clients/p-water.webp" width="200" height="100" loading="eager" decoding="async" alt="P Water"></div>
+          <div class="client-logo" role="listitem"><img src="assets/img/clients/imi.webp" width="200" height="100" loading="eager" decoding="async" alt="Ikatan Motor Indonesia"></div>
+          <div class="client-logo" role="listitem"><img src="assets/img/clients/suli5.webp" width="200" height="100" loading="eager" decoding="async" alt="Suli5"></div>
+          <div class="client-logo" role="listitem"><img src="assets/img/clients/fort.webp" width="200" height="100" loading="eager" decoding="async" alt="FORT"></div>
+          <div class="client-logo" role="listitem"><img src="assets/img/clients/212.webp" width="200" height="100" loading="eager" decoding="async" alt="Air Mineral 212"></div>
+            </div>
+            <div class="client-group" aria-hidden="true">
+          <div class="client-logo"><img src="assets/img/clients/pertamina-energy-terminal.webp" width="200" height="100" loading="eager" decoding="async" alt=""></div>
+          <div class="client-logo"><img src="assets/img/clients/2tang.webp" width="200" height="100" loading="eager" decoding="async" alt=""></div>
+          <div class="client-logo"><img src="assets/img/clients/masjid-istiqlal.webp" width="200" height="100" loading="eager" decoding="async" alt=""></div>
+          <div class="client-logo"><img src="assets/img/clients/tds-nol.webp" width="200" height="100" loading="eager" decoding="async" alt=""></div>
+          <div class="client-logo"><img src="assets/img/clients/viura.webp" width="200" height="100" loading="eager" decoding="async" alt=""></div>
+          <div class="client-logo"><img src="assets/img/clients/qoha.webp" width="200" height="100" loading="eager" decoding="async" alt=""></div>
+          <div class="client-logo"><img src="assets/img/clients/tamansari-dian-persada.webp" width="200" height="100" loading="eager" decoding="async" alt=""></div>
+          <div class="client-logo"><img src="assets/img/clients/p-water.webp" width="200" height="100" loading="eager" decoding="async" alt=""></div>
+          <div class="client-logo"><img src="assets/img/clients/imi.webp" width="200" height="100" loading="eager" decoding="async" alt=""></div>
+          <div class="client-logo"><img src="assets/img/clients/suli5.webp" width="200" height="100" loading="eager" decoding="async" alt=""></div>
+          <div class="client-logo"><img src="assets/img/clients/fort.webp" width="200" height="100" loading="eager" decoding="async" alt=""></div>
+          <div class="client-logo"><img src="assets/img/clients/212.webp" width="200" height="100" loading="eager" decoding="async" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint testimonial-section" id="testimoni" aria-labelledby="testimoni-title">
+      <div class="container"><header class="section-head"><span class="eyebrow">Pengalaman Bermitra</span><h2 class="h-section" id="testimoni-title">Testimoni Klien</h2></header>
+        <article class="testimonial-card">
+          <figure class="testimonial-photo"><img src="assets/img/portfolio-pabrik-gelas-botol-800.webp" width="800" height="436" loading="lazy" decoding="async" alt="Ilustrasi sementara fasilitas produksi AMDK untuk cerita PT Viura Indo Tirta"><figcaption>Foto ilustrasi sementara</figcaption></figure>
+          <div class="testimonial-copy"><div class="testimonial-client"><img src="assets/img/clients/viura.webp" width="130" height="60" loading="lazy" decoding="async" alt="Viura"><span class="spec-k">PT Viura Indo Tirta</span></div>
+            <p class="body-sm testimonial-context">Pendampingan sejak perancangan bisnis, pengembangan fasilitas produksi, hingga strategi pemasaran pabrik AMDK.</p>
+            <figure class="testimonial-quote"><blockquote>“PT Tirta Wiyata Investama telah menjadi mitra yang sangat berharga… Mereka memiliki tim yang berpengalaman dan solusi inovatif…”</blockquote><figcaption><strong>CEO PT Viura Indo Tirta</strong></figcaption></figure>
+            <div class="testimonial-results"><div><strong>31</strong><span>Klien produksi</span></div><div><strong>2</strong><span>Shift produksi rata-rata</span></div></div>
+          </div>
+        </article>
       </div>
     </section>
 
@@ -1380,27 +1148,27 @@
           <div class="contact-copy">
             <span class="eyebrow">Pusat Layanan Teknis</span>
             <h2 class="h-section" id="kontak-title">Mari Diskusikan Kebutuhan Pabrik Anda.</h2>
-            <p class="lead">Konsultasikan target kapasitas, kondisi lahan, atau kebutuhan mesin air minum Anda bersama tim perancang pabrik kami.</p>
+            <p class="lead">Diskusikan rencana pabrik, kebutuhan pengadaan, atau pendampingan legalitas AMDK bersama tim konsultan kami.</p>
             <ul class="contact-list">
               <li>
                 <span class="ms" aria-hidden="true">location_on</span>
                 <div>
-                  <h3 class="h-title">Alamat Operasional &amp; Workshop</h3>
-                  <p>Tirta Wiyata Investama, Jl. Contoh Industri No. 123, Kota Contoh</p>
+                  <h3 class="h-title">Alamat Kantor</h3>
+                  <p>Jl. Mayor Oking Admaja No.15</p>
                 </div>
               </li>
               <li>
-                <span class="ms" aria-hidden="true">schedule</span>
+                <span class="ms" aria-hidden="true">mail</span>
                 <div>
-                  <h3 class="h-title">Jam Operasional</h3>
-                  <p>Senin–Jumat, 08.00–17.00 WIB</p>
+                  <h3 class="h-title">Email</h3>
+                  <p><a href="mailto:tirtawiyatainvestama@gmail.com">tirtawiyatainvestama@gmail.com</a></p>
                 </div>
               </li>
               <li>
                 <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
                 <div>
-                  <h3 class="h-title">WhatsApp Resmi Penjualan &amp; Rekayasa</h3>
-                  <p><a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">+62 812-3456-7890</a></p>
+                  <h3 class="h-title">WhatsApp Konsultasi</h3>
+                  <p><a href="https://wa.me/6282128612349" target="_blank" rel="noopener noreferrer">+62 821 2861 2349</a></p>
                 </div>
               </li>
             </ul>
@@ -1410,11 +1178,11 @@
             <div class="cta-icon" aria-hidden="true"><svg class="ico-wa"><use href="#i-wa"/></svg></div>
             <h3 class="h-card">Layanan Respons Cepat</h3>
             <p class="body-sm">Kirimkan detail rancangan atau pertanyaan spesifikasi mesin langsung ke WhatsApp resmi kami.</p>
-            <a class="btn btn-wa btn-lg btn-block" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20berdiskusi%20mengenai%20kebutuhan%20pabrik%20AMDK." target="_blank" rel="noopener noreferrer">
+            <a class="btn btn-wa btn-lg btn-block" href="https://wa.me/6282128612349?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20berdiskusi%20mengenai%20kebutuhan%20pabrik%20AMDK." target="_blank" rel="noopener noreferrer">
               <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
               Hubungi Kami
             </a>
-            <p class="cta-number tnum">+62 812-3456-7890</p>
+            <p class="cta-number tnum">+62 821 2861 2349</p>
           </div>
         </div>
       </div>
@@ -1433,17 +1201,17 @@
               <span class="footer-brand-sub">AMDK Plant Engineering</span>
             </span>
           </a>
-          <p>Konsultan &amp; penyedia mesin pabrik air minum dalam kemasan (AMDK) berstandar farmasi &amp; industri Indonesia.</p>
+          <p>Konsultan industri AMDK untuk pendampingan bisnis, supply chain, serta pengadaan barang dan jasa sesuai kebutuhan klien.</p>
           <span class="footer-standard"><span class="ms" aria-hidden="true">verified</span>SUS304 / SUS316L Food Grade Standard</span>
         </div>
 
         <div>
           <h4>Solusi Lini Pabrik</h4>
           <ul>
-            <li><a href="#layanan-perlengkapan">Water Treatment Ultrafiltrasi &amp; RO</a></li>
-            <li><a href="#produk">Lini Galon 19 L Monobloc</a></li>
-            <li><a href="#produk">Botol PET 330–1.500 ml Otomatis</a></li>
-            <li><a href="#layanan-perlengkapan">Lini Cup Rotary 120–240 ml</a></li>
+            <li><a href="#layanan-perlengkapan">Pengadaan Water Treatment</a></li>
+            <li><a href="#pengadaan-mesin">Mesin Filling Galon</a></li>
+            <li><a href="#pengadaan-mesin">Mesin Filling Botol</a></li>
+            <li><a href="#layanan-perlengkapan">Mesin Filling Cup</a></li>
           </ul>
         </div>
 
@@ -1452,17 +1220,17 @@
           <ul>
             <li><a href="#tentang">Tentang Kami</a></li>
             <li><a href="#layanan">Layanan Rekayasa</a></li>
-            <li><a href="#produk">Katalog Mesin</a></li>
-            <li><a href="#custom">Custom Order</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#legalitas">Legalitas &amp; Sertifikasi</a></li>
+
+            <li><a href="#portfolio">Pencapaian Mitra</a></li>
           </ul>
         </div>
 
         <div class="footer-contact">
-          <h4>Kantor Teknis &amp; Workshop</h4>
-          <p>Jl. Contoh Industri No. 123, Kota Contoh, Indonesia</p>
-          <p class="tnum">Hotline: <a href="tel:+622189880000">+62 21 8988 0000</a></p>
-          <p class="footer-hours"><span class="ms" aria-hidden="true">schedule</span>Senin–Jumat, 08.00–17.00 WIB</p>
+          <h4>Kontak Kami</h4>
+          <p>Jl. Mayor Oking Admaja No.15</p>
+          <p class="tnum">Hotline: <a href="tel:+6282128612349">+62 821 2861 2349</a></p>
+          <p><a href="mailto:tirtawiyatainvestama@gmail.com">tirtawiyatainvestama@gmail.com</a></p>
         </div>
       </div>
 
@@ -1477,46 +1245,18 @@
   <a class="back-to-top" href="#top" aria-label="Kembali ke atas" title="Kembali ke atas">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5m-7 7 7-7 7 7"/></svg>
   </a>
-  <a class="fab" href="https://wa.me/6281234567890?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20langsung." target="_blank" rel="noopener noreferrer" aria-label="Hubungi Kami">
+  <a class="fab" href="https://wa.me/6282128612349?text=Halo%20Admin%20Tirta%20Wiyata%20Investama%2C%20saya%20ingin%20konsultasi%20langsung." target="_blank" rel="noopener noreferrer" aria-label="Hubungi Kami">
     <svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>
   </a>
 
-  <!-- ======================= SPEC MODAL ======================= -->
-  <dialog class="spec-modal" id="spec-modal" aria-labelledby="spec-modal-title">
-    <div class="modal-inner">
-      <div class="modal-head">
-        <div class="modal-title">
-          <span class="ms" aria-hidden="true">tune</span>
-          <div>
-            <h2 id="spec-modal-title">Spesifikasi Teknis</h2>
-            <span class="spec-k" id="spec-modal-sub"></span>
-          </div>
-        </div>
-        <button class="modal-close" type="button" data-close aria-label="Tutup spesifikasi"><span class="ms" aria-hidden="true">close</span></button>
-      </div>
-      <div class="modal-body">
-        <div class="cap-row"><span>Kapasitas Output</span><span id="spec-modal-cap"></span></div>
-        <table class="spec-table"><tbody id="spec-modal-rows"></tbody></table>
-        <p class="modal-note" id="spec-modal-note"></p>
-      </div>
-      <div class="modal-foot">
-        <span class="spec-k">Garansi Resmi 1 Tahun • SLA Dukungan Suku Cadang</span>
-        <div class="modal-actions">
-          <button class="btn btn-soft" type="button" data-close>Tutup</button>
-          <a class="btn btn-wa" id="spec-modal-wa" href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer"><svg class="ico-wa" aria-hidden="true"><use href="#i-wa"/></svg>Minta Penawaran</a>
-        </div>
-      </div>
-    </div>
-  </dialog>
-
-  <script src="assets/js/i18n.js"></script>
+<script src="assets/js/i18n.js"></script>
+  <script src="assets/js/partners.js"></script>
+  <script src="assets/js/clients.js"></script>
   <script>
     (function () {
       'use strict';
 
 
-      var WA_NUMBER = '6281234567890';
-      var BRAND = 'Tirta Wiyata Investama';
 
       /* ---------- Mobile navigation ---------- */
       var toggle = document.querySelector('.nav-toggle');
@@ -1552,149 +1292,8 @@
         document.querySelectorAll('main > section[id]').forEach(function (s) { observer.observe(s); });
       }
 
-      /* ---------- Category filters ---------- */
-      document.querySelectorAll('[data-filter-target]').forEach(function (group) {
-        var gridId = group.getAttribute('data-filter-target');
-        var grid = document.getElementById(gridId);
-        var status = document.querySelector('[data-filter-status="' + gridId + '"]');
-        group.addEventListener('click', function (e) {
-          var btn = e.target.closest('button[data-filter]');
-          if (!btn) return;
-          var filter = btn.getAttribute('data-filter');
-          group.querySelectorAll('button[data-filter]').forEach(function (b) {
-            b.setAttribute('aria-pressed', String(b === btn));
-          });
-          var shown = 0;
-          grid.querySelectorAll('[data-category]').forEach(function (item) {
-            var match = filter === 'all' || item.getAttribute('data-category') === filter;
-            item.hidden = !match;
-            if (match) shown++;
-          });
-          if (status) status.textContent = window.siteI18n.language === 'en' ? 'Showing ' + shown + ' items for ' + btn.textContent.trim() + '.' : 'Menampilkan ' + shown + ' item untuk filter ' + btn.textContent.trim() + '.';
-        });
-      });
-
-      /* ---------- Specification modal ---------- */
-      var DEFAULT_NOTE = 'Data dimensi, berat, tekanan udara, dan sistem PLC untuk model ini dikirim bersama lembar spesifikasi resmi. Minta lewat WhatsApp untuk mendapatkannya.';
-      var SPECS = {
-        'TWI-G19': {
-          sub: 'Mesin Cetak Galon 19 L (Blow Moulding Semi-Auto)',
-          cap: '120 – 240 galon/jam (tergantung gramatur preform)',
-          rows: [
-            ['Volume Kemasan', '19 Liter (Standar 5 Galon)'],
-            ['Bahan Baku Kompatibel', 'Polycarbonate (PC) & Polyethylene Terephthalate (PET)'],
-            ['Jumlah Rongga (Cavity)', '1 Cavity / Cycle'],
-            ['Daya Pemanas Inframerah', '28 kW (16 Zona Pemanas Terpisah)'],
-            ['Total Konsumsi Daya', '32 kW (3-Phase 380V, 50Hz)'],
-            ['Tekanan Udara Operasional (Tiup)', '2,8 – 3,2 MPa (Kompresor Tekanan Tinggi)'],
-            ['Tekanan Operasional (Pneumatik)', '0,8 – 1,0 MPa'],
-            ['Sistem Kontrol PLC & Layar', 'Mitsubishi / Siemens Smart Interface (Bahasa Inggris/Mandarin)'],
-            ['Dimensi Mesin (P × L × T)', '2.250 × 850 × 2.100 mm'],
-            ['Berat Total Mesin', '± 2.100 kg']
-          ],
-          noteLabel: 'Kelengkapan paket mesin:',
-          note: 'Unit utama TWI-G19, oven pemanas preform rotary, set cetakan galon standar polos, tool kit instalasi, dan buku panduan operasi teknis.'
-        },
-        'TWI-G5': {
-          sub: 'Mesin Cetak Galon 5 L',
-          cap: '400 – 600 BPH',
-          rows: [
-            ['Volume Kemasan', '5 Liter'],
-            ['Daya Listrik', '24 kW'],
-            ['Jumlah Rongga (Cavity)', '2 Cavity']
-          ]
-        },
-        'TWI-B600': {
-          sub: 'Mesin Cetak Botol PET 330–600 ml (Linear Otomatis)',
-          cap: '2.000 – 4.500 BPH',
-          rows: [
-            ['Volume Kemasan', '330 ml & 600 ml'],
-            ['Daya Listrik', '38 kW'],
-            ['Jumlah Rongga (Cavity)', '4 Cavity']
-          ]
-        },
-        'TWI-B1500': {
-          sub: 'Mesin Cetak Botol PET 1.500 ml',
-          cap: '1.500 – 3.000 BPH',
-          rows: [
-            ['Volume Kemasan', '1.500 ml'],
-            ['Daya Listrik', '42 kW'],
-            ['Jumlah Rongga (Cavity)', '2 – 4 Cavity']
-          ]
-        }
-      };
-
-      var modal = document.getElementById('spec-modal');
-      var lastTrigger = null;
-
-      function fillModal(model) {
-        var spec = SPECS[model];
-        if (!spec) return false;
-        modal.dataset.model = model;
-        document.getElementById('spec-modal-title').textContent = window.siteI18n.t('Spesifikasi Teknis') + ': ' + model;
-        document.getElementById('spec-modal-sub').textContent = window.siteI18n.t(spec.sub);
-        document.getElementById('spec-modal-cap').textContent = window.siteI18n.t(spec.cap);
-
-        var tbody = document.getElementById('spec-modal-rows');
-        tbody.textContent = '';
-        spec.rows.forEach(function (row) {
-          var tr = document.createElement('tr');
-          var th = document.createElement('th');
-          var td = document.createElement('td');
-          th.scope = 'row';
-          th.textContent = window.siteI18n.t(row[0]);
-          td.textContent = window.siteI18n.t(row[1]);
-          tr.appendChild(th);
-          tr.appendChild(td);
-          tbody.appendChild(tr);
-        });
-
-        var note = document.getElementById('spec-modal-note');
-        note.textContent = '';
-        if (spec.noteLabel) {
-          var strong = document.createElement('strong');
-          strong.textContent = window.siteI18n.t(spec.noteLabel) + ' ';
-          note.appendChild(strong);
-        }
-        note.appendChild(document.createTextNode(window.siteI18n.t(spec.note || DEFAULT_NOTE)));
-
-        var msg = 'Halo Admin ' + BRAND + ', saya tertarik dengan spesifikasi ' + model + ' (' + spec.sub + ') dan ingin meminta penawaran resmi.';
-        if (window.siteI18n.language === 'en') msg = 'Hello ' + BRAND + ', I am interested in the specifications of ' + model + ' (' + window.siteI18n.t(spec.sub) + ') and would like to request a quotation.';
-        document.getElementById('spec-modal-wa').href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
-        return true;
-      }
-
-      function openModal(model, trigger) {
-        if (!fillModal(model)) return;
-        lastTrigger = trigger || null;
-        document.documentElement.classList.add('modal-open');
-        if (typeof modal.showModal === 'function') modal.showModal();
-        else modal.setAttribute('open', '');
-        modal.querySelector('.modal-body').scrollTop = 0;
-      }
-
-      function closeModal() {
-        if (typeof modal.close === 'function') modal.close();
-        else { modal.removeAttribute('open'); onClosed(); }
-      }
-
-      function onClosed() {
-        document.documentElement.classList.remove('modal-open');
-        if (lastTrigger) lastTrigger.focus();
-      }
-
-      document.addEventListener('click', function (e) {
-        var trigger = e.target.closest('[data-spec]');
-        if (trigger) openModal(trigger.getAttribute('data-spec'), trigger);
-      });
-      modal.addEventListener('click', function (e) {
-        if (e.target === modal || e.target.closest('[data-close]')) closeModal();
-      });
-      modal.addEventListener('close', onClosed);
       document.addEventListener('site:languagechange', function () {
         setNav(!mobileNav.hidden);
-        document.querySelectorAll('[data-filter-status]').forEach(function (status) { status.textContent = ''; });
-        if (modal.dataset.model) fillModal(modal.dataset.model);
       });
 
       /* ---------- Footer year ---------- */
